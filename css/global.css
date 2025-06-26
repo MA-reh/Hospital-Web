@@ -1,0 +1,26 @@
+:root {
+    --background-nav: rgb(8, 60, 117);
+    --background-nav-drop: rgba(8, 60, 117, 0.8);
+    --background-footer: rgba(8, 60, 117, 0.9);
+    --background-body: rgba(199, 200, 201, 0.687);
+    --hover-nav-buttons: rgba(32, 146, 245, 0.731);
+    --icons-footer: rgba(190, 190, 190, 0.8);
+    --divs-login: rgba(59, 66, 96, 0.872);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    /* background-color: var(--background-body); */
+    background-image: url("../Images/Ro5am.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

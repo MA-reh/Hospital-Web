@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MENG Hospital</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/Fonts.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/Booking.css" />
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <div>
+      <div>
+        <div>
+          <nav>
+            <div class="name-hospital">
+              <img src="./Images/Logo_Hospital.jpeg" alt="Hospital Logo" />
+              <h2>MENG Hospital</h2>
+            </div>
+            <div class="nav-links">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Clinic.html">Clinic</a></li>
+                <li>
+                  <a href="./Booking.html" class="line-page-nav">Booking</a>
+                </li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li>
+                  <i class="fa-solid fa-bars" id="iconNav"></i>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- Drop Dawn Div For Nav Bar -->
+      <div class="drop-nav" id="navMenu">
+        <ul>
+          <li><a href="./Doctors_page.html">Doctors</a></li>
+          <li><a href="./Pharmacy.html">Pharmacy</a></li>
+          <li><a href="./Lab.html">Lab</a></li>
+          <li><a href="./Room-Booking.html">Room Booking</a></li>
+          <li><a href="./Awareness.html">Awareness</a></li>
+          <li><a href="./F.A.Q.html">F.A.Q</a></li>
+          <li><a href="./Achievements.html">Achievements</a></li>
+          <li>
+            <a href="./signin.html">Login</a><span> / </span
+            ><a href="./signup.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+      <script>
+        let navButton = document.querySelector("#iconNav");
+        let navMenu = document.querySelector("#navMenu");
+        navButton.addEventListener("click", function () {
+          if (navMenu.style.display === "block") {
+            navMenu.style.display = "none";
+          } else {
+            navMenu.style.display = "block";
+          }
+        });
+      </script>
+    </div>
+    <!-- End Nav Bar -->
+
+    <div class="booking-container">
+      <div class="form-wrapper">
+        <h2 class="form-title">Book Your Appointment</h2>
+        <div class="form-card">
+          <form class="booking-form">
+            <input type="text" placeholder="Full Name" required />
+            <input type="text" placeholder="Your Number" required />
+
+            <select id="specialty" required onchange="updateDoctors()">
+              <option disabled selected>Select Specialty</option>
+              <option value="neurology">Neurology</option>
+              <option value="cardiology">Cardiology</option>
+              <option value="pulmonology">Pulmonology</option>
+              <option value="ophthalmology">Ophthalmology</option>
+              <option value="otolaryngology">Otolaryngology</option>
+              <option value="hepatology">Hepatology</option>
+              <option value="nephrology">Nephrology</option>
+              <option value="gastroenterology">Gastroenterology</option>
+            </select>
+
+            <select id="doctor" required>
+              <option disabled selected>Select Doctor</option>
+            </select>
+
+            <select id="day" required>
+              <option disabled selected>Select Day</option>
+              <option>Saturday</option>
+              <option>Sunday</option>
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+            </select>
+
+            <select id="time" required>
+              <option disabled selected>Select Time</option>
+              <option>10:00 AM</option>
+              <option>11:30 AM</option>
+              <option>1:00 PM</option>
+              <option>3:00 PM</option>
+              <option>5:30 PM</option>
+              <option>7:00 PM</option>
+            </select>
+
+            <button type="submit" class="submit">Book now</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="image-wrapper">
+        <img src="./Images/Booking-photo.jpg" alt="Hospital Team" />
+      </div>
+    </div>
+
+    <script>
+      const doctorsBySpecialty = {
+        neurology: ["Dr. Sarah Collins", "Dr. Adam Foster", "Dr. Helen Brooks"],
+        cardiology: ["Dr. John Smith", "Dr. Emily Clark", "Dr. Noah Davis"],
+        pulmonology: ["Dr. Michael Lee", "Dr. Ava Moore", "Dr. Ryan White"],
+        ophthalmology: ["Dr. Laura King", "Dr. Kevin Young", "Dr. Zoe Harris"],
+        otolaryngology: [
+          "Dr. Daniel Scott",
+          "Dr. Mia Adams",
+          "Dr. Blake Turner",
+        ],
+        hepatology: ["Dr. Sophia Miller", "Dr. Liam Walker", "Dr. Grace Evans"],
+        nephrology: ["Dr. James Hall", "Dr. Ella Green", "Dr. Ethan Price"],
+        gastroenterology: [
+          "Dr. Olivia Hill",
+          "Dr. Lucas Allen",
+          "Dr. Chloe Baker",
+        ],
+      };
+
+      function updateDoctors() {
+        const specialtySelect = document.getElementById("specialty");
+        const doctorSelect = document.getElementById("doctor");
+        const selected = specialtySelect.value;
+
+        doctorSelect.innerHTML =
+          "<option disabled selected>Select Doctor</option>";
+        (doctorsBySpecialty[selected] || []).forEach((doctor) => {
+          const opt = document.createElement("option");
+          opt.value = doctor;
+          opt.textContent = doctor;
+          doctorSelect.appendChild(opt);
+        });
+      }
+    </script>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="part">
+            <div class="slide">
+              <img src="./Images/Logo_Hospital.jpeg" alt="" />
+              <h2>MENG Hospital</h2>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <p>
+                MENG Hospital is dedicated to providing exceptional healthcare
+                services with a focus on patient well-being and advanced medical
+                practices.
+              </p>
+            </div>
+            <div class="slide">
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Nile Corniche, Al Eini,
+                El Sayeda Zeinab, Cairo Governorate
+              </p>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3><i class="fa-solid fa-location-pin"></i> Useful Links</h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./About.html"> About Us</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./index.html"> Our Services</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Pharmacy.html"> Pharmacy</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Doctors_page.html"> Find a Doctor</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Awareness.html"> Awareness</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3>
+                <i class="fa-solid fa-briefcase-medical"></i> Our Services
+              </h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Lab.html"> Lab</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Booking.html"> Booking</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Achievements.html"> Achievements </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Clinic.html"> Clinic</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./About.html"> About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3><i class="fa-solid fa-circle-info"></i> Support</h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./F.A.Q.html"> F.A.Q</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Awareness.html"> Awareness</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Doctors_page.html"> Find Doctor </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Room-Booking.html"> Room Booking</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./contact.html"> Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3>Contact Details</h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul class="social-links">
+                <li>
+                  <a href="https://web.telegram.org/k/#@MedoAyman200"
+                    ><i class="fa-brands fa-telegram"></i> MedoAyman200</a
+                  >
+                </li>
+                <li>
+                  <a href="https://instagram.com/mhmdayman515"
+                    ><i class="fa-brands fa-instagram"></i> mhmdayman515</a
+                  >
+                </li>
+                <li>
+                  <a href="https://wa.me/qr/OZJSQ4A6AYJOO1"
+                    ><i class="fa-brands fa-whatsapp"></i> (+20) 1040424647</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Medoscar100@gmail.com
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Call: +20 1040424647</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

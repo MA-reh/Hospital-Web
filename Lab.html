@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MENG Hospital</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/Fonts.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/Lab.css" />
+  </head>
+
+  <body>
+    <!-- Nav Bar -->
+    <div>
+      <div>
+        <div>
+          <nav>
+            <div class="name-hospital">
+              <img src="./Images/Logo_Hospital.jpeg" alt="Hospital Logo" />
+              <h2>MENG Hospital</h2>
+            </div>
+            <div class="nav-links">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Clinic.html">Clinic</a></li>
+                <li><a href="./Booking.html">Booking</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li>
+                  <i class="fa-solid fa-bars" id="iconNav"></i>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- Drop Dawn Div For Nav Bar -->
+      <div class="drop-nav" id="navMenu">
+        <ul>
+          <li><a href="./Doctors_page.html">Doctors</a></li>
+          <li><a href="./Pharmacy.html">Pharmacy</a></li>
+          <li><a href="./Lab.html" class="line-page-nav">Lab</a></li>
+          <li><a href="./Room-Booking.html">Room Booking</a></li>
+          <li><a href="./Awareness.html">Awareness</a></li>
+          <li><a href="./F.A.Q.html">F.A.Q</a></li>
+          <li><a href="./Achievements.html">Achievements</a></li>
+          <li>
+            <a href="./signin.html">Login</a><span> / </span
+            ><a href="./signup.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+      <script>
+        let navButton = document.querySelector("#iconNav");
+        let navMenu = document.querySelector("#navMenu");
+        navButton.addEventListener("click", function () {
+          if (navMenu.style.display === "block") {
+            navMenu.style.display = "none";
+          } else {
+            navMenu.style.display = "block";
+          }
+        });
+      </script>
+    </div>
+    <!-- End Nav Bar -->
+
+    <header>
+      <div class="container-1">
+        <div class="card">
+          <div class="part">
+            <img
+              src="./Images/Lab_why.jpeg"
+              alt="lab"
+              width="400rem"
+              height="380rem"
+            />
+          </div>
+          <div class="part">
+            <div class="text-container">
+              <h2>Why Choose US ?</h2>
+            </div>
+            <div class="text-container">
+              <p>
+                * Rapid and Accurate Results : We prioritize your time and
+                health, delivering precise test results quickly so you can get
+                the answers you need without delay.
+                <br />
+                * Cutting-Edge Technology : Our laboratory is equipped with the
+                latest advancements in analytical instrumentation, ensuring the
+                highest standards of testing and diagnostic accuracy <br />
+                * Highly Qualified Team : Our dedicated team of experienced
+                pathologists, medical technologists, and support staff are
+                committed to excellence, providing expert care and reliable
+                analysis. <br />
+                * Stringent Quality Control : We adhere to the strictest
+                international quality control standards and protocols,
+                guaranteeing the integrity and reliability of every test
+                performed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--why-->
+
+    <section>
+      <div class="section-text">
+        <h2>Our Analysis</h2>
+      </div>
+      <div class="container-2">
+        <div class="part">
+          <img src="./Images/DNA.jpeg" alt="DNA" width="150px" height="150px" />
+        </div>
+        <div class="part">
+          <div class="text-container">
+            <h2>DNA Analysis</h2>
+          </div>
+          <div class="text-container">
+            <p>
+              * DNA tests analyze your unique genetic code to reveal information
+              about your health, ancestry, or biological relationships. These
+              tests can identify predispositions to certain diseases, confirm
+              paternity <br />
+              <br />
+              * The result of analysis will appear after 5 days
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-2">
+        <div class="part">
+          <img
+            src="./Images/Gland_Analysis.jpeg"
+            alt="Gland"
+            width="150px"
+            height="150px"
+          />
+        </div>
+        <div class="part">
+          <div class="text-container">
+            <h2>Gland Analysis</h2>
+          </div>
+          <div class="text-container">
+            <p>
+              * Thyroid tests are blood tests that measure the levels of
+              hormones produced by your thyroid gland, a small butterfly-shaped
+              gland in your neck. The most common tests include Thyroid
+              Stimulating Hormone (TSH), T3, and T4 <br />
+              <br />
+              * The result of analysis will appear after 1 day
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-2">
+        <div class="part">
+          <img
+            src="./Images/Liver_Analysis.jpeg"
+            alt="Liver"
+            width="150px"
+            height="150px"
+          />
+        </div>
+        <div class="part">
+          <div class="text-container">
+            <h2>Liver Analysis</h2>
+          </div>
+          <div class="text-container">
+            <p>
+              * Liver function tests (LFTs) are blood tests that measure enzymes
+              and proteins in your blood, providing insights into the health and
+              function of your liver. They help doctors detect liver damage or
+              disease, such as hepatitis or cirrhosis <br />
+              <br />
+              * The result of analysis will appear after 2 days
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-2">
+        <div class="part">
+          <img
+            src="./Images/Blood_Analysis.jpeg"
+            alt="Blood"
+            width="150px"
+            height="150px"
+          />
+        </div>
+        <div class="part">
+          <div class="text-container">
+            <h2>Blood Analysis</h2>
+          </div>
+          <div class="text-container">
+            <p>
+              * Blood tests are common medical procedures that involve taking a
+              sample of your blood, usually from a vein in your arm. These tests
+              help doctors check your overall health and can detect a wide range
+              of conditions, such as infections, anemia, or diabetes. <br />
+              <br />
+              * The result of analysis will appear after 3 hours
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-2">
+        <div class="part">
+          <img
+            src="./Images/Suger_Analysis.jpeg"
+            alt="Sugar"
+            width="150px"
+            height="150px"
+          />
+        </div>
+        <div class="part">
+          <div class="text-container">
+            <h2>Sugar Analysis</h2>
+          </div>
+          <div class="text-container">
+            <p>
+              * Blood sugar tests measure the amount of glucose in your blood,
+              which is your body's main source of energy. These tests are
+              crucial for diagnosing and managing conditions like diabetes and
+              prediabetes. <br />
+              <br />
+              * The result of analysis will appear after 1 hour
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-2">
+        <div class="part">
+          <img
+            src="./Images/Tumor_Analysis.jpeg"
+            alt="cancer"
+            width="150px"
+            height="150px"
+          />
+        </div>
+        <div class="part">
+          <div class="text-container">
+            <h2>Tumor Analysis</h2>
+          </div>
+          <div class="text-container">
+            <p>
+              * Tumor marker tests are blood tests that look for specific
+              substances (markers) that are often produced by cancer cells or by
+              the body in response to cancer. While high levels can suggest the
+              presence of cancer, they are not used alone for diagnosis <br />
+              <br />
+              * The result of analysis will appear after 6 days
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-2">
+        <div class="part">
+          <img
+            src="./Images/Virus.jpeg"
+            alt="virus"
+            width="150px"
+            height="150px"
+          />
+        </div>
+        <div class="part">
+          <div class="text-container">
+            <h2>Virus Analysis</h2>
+          </div>
+          <div class="text-container">
+            <p>
+              Virus tests are crucial diagnostic tools that identify the
+              presence of viral infections in the body . These tests often look
+              for viral genetic material (like DNA or RNA) or antibodies
+              produced by your immune system in response to a virus. <br />
+              <br />
+              * The result of analysis will appear after 12 hours
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-2">
+        <div class="part">
+          <div class="text-container">
+            <h2>How to Book a Lab Test at a Hospital Laboratory ?</h2>
+          </div>
+          <div class="text-container">
+            <p>
+              1-) Get a Doctor's Referral : Obtain a written referral or
+              prescription from your doctor detailing the specific lab tests you
+              need. This is usually a mandatory requirement. <br />
+              <br />
+              2-) Contact the Lab for an Appointment : Call the hospital's
+              laboratory department or visit their website to inquire about
+              booking procedures and schedule an appointment. Confirm if fasting
+              or any other special preparations are needed. <br />
+              <br />
+              3-) Attend Your Appointment with Documents : Arrive at the lab at
+              your scheduled time. Make sure to bring your doctor's referral,
+              identification, and any relevant insurance information
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="part">
+            <div class="slide">
+              <img src="./Images/Logo_Hospital.jpeg" alt="" />
+              <h2>MENG Hospital</h2>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <p>
+                MENG Hospital is dedicated to providing exceptional healthcare
+                services with a focus on patient well-being and advanced medical
+                practices.
+              </p>
+            </div>
+            <div class="slide">
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Nile Corniche, Al Eini,
+                El Sayeda Zeinab, Cairo Governorate
+              </p>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3><i class="fa-solid fa-location-pin"></i> Useful Links</h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./About.html"> About Us</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./index.html"> Our Services</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Pharmacy.html"> Pharmacy</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Doctors_page.html"> Find a Doctor</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Awareness.html"> Awareness</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3>
+                <i class="fa-solid fa-briefcase-medical"></i> Our Services
+              </h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Lab.html"> Lab</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Booking.html"> Booking</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Achievements.html"> Achievements </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Clinic.html"> Clinic</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./About.html"> About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3><i class="fa-solid fa-circle-info"></i> Support</h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./F.A.Q.html"> F.A.Q</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Awareness.html"> Awareness</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Doctors_page.html"> Find Doctor </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Room-Booking.html"> Room Booking</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./contact.html"> Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3>Contact Details</h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul class="social-links">
+                <li>
+                  <a href="https://web.telegram.org/k/#@MedoAyman200"
+                    ><i class="fa-brands fa-telegram"></i> MedoAyman200</a
+                  >
+                </li>
+                <li>
+                  <a href="https://instagram.com/mhmdayman515"
+                    ><i class="fa-brands fa-instagram"></i> mhmdayman515</a
+                  >
+                </li>
+                <li>
+                  <a href="https://wa.me/qr/OZJSQ4A6AYJOO1"
+                    ><i class="fa-brands fa-whatsapp"></i> (+20) 1040424647</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Medoscar100@gmail.com
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Call: +20 1040424647</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

@@ -1,0 +1,291 @@
+div>nav {
+    background-color: var(--background-nav);
+    height: 12.5vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #000 solid 3px;
+}
+
+div>nav>div.name-hospital {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div>nav>div.name-hospital>h2 {
+    font-size: 2rem;
+    cursor: context-menu;
+    color: #fff;
+}
+
+div>nav>div.name-hospital>img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+div>nav>div.nav-links {
+    width: 50%;
+    height: 100%;
+}
+
+div>nav>div.nav-links>ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    height: 100%;
+}
+
+div>nav>div.nav-links>ul>li {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+div>nav>div.nav-links>ul>li>a, div>nav>div.nav-links>ul>li>i {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+div>nav>div.nav-links>ul>li>a:hover, div>nav>div.nav-links>ul>li>i:hover, div>div.drop-nav>ul>li>a:hover {
+    text-decoration: none;
+    color: var(--hover-nav-buttons);
+    transition: color 0.3s ease-in-out;
+}
+
+div>nav>div.nav-links>ul>li>i {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+div>nav>div.nav-links>ul>li>a.line-page-nav, div>div.drop-nav>ul>li>a.line-page-nav {
+    border-bottom: #f5f3f3 solid 4px;
+}
+
+div>nav>div.nav-links>ul>li>a.line-page-nav:hover, div>div.drop-nav>ul>li>a.line-page-nav:hover {
+    transition: color 0.3s ease-in-out;
+    color: #fff;
+}
+
+/* Drop NavBar */
+
+div>div.drop-nav {
+    position: absolute;
+    background-color: var(--background-nav-drop);
+    width: 275px;
+    display: none;
+    border-radius: 0.5rem;
+    right: 15px;
+    top: 95px;
+    height: 500px;
+    z-index: 1000;
+    border: #000 solid 3px;
+}
+
+div>div.drop-nav>ul {
+    list-style-type: none;
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+
+div>div.drop-nav>ul>li {
+    font-size: 1.5rem;
+    cursor: pointer;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div>div.drop-nav>ul>li:not(:last-child) {
+    border-bottom: #fff solid 2px;
+}
+
+div>div.drop-nav>ul>li:last-child {
+    gap: 7px;
+}
+
+div>div.drop-nav>ul>li>a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+    color: #fff;
+}
+
+/* End Nav */
+
+ul li, ul {
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 40vh;
+    background-color: var(--background-footer);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>div.container {
+    width: 90% !important;
+    height: 90% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer>div.container>div.footer {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer>div.container>div.footer>div.part h3 {
+    cursor: context-menu;
+}
+
+footer>div.container>div.footer>div.part {
+    width: calc(100% / 6);
+    height: 100% !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+footer>div.container>div.footer>div.part:not(:last-child) div.slide i {
+    color: var(--icons-footer);
+    margin-bottom: 0.5rem;
+}
+
+footer>div.container>div.footer>div.part:last-child div.slide i {
+    color: var(--hover-nav-buttons);
+    margin-bottom: 0.5rem;
+}
+
+footer>div.container>div.footer>div.part:nth-child(1) {
+    width: 33% !important;
+    height: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer>div.container>div.footer>div.part>div.slide {
+    width: 100% !important;
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+
+footer>div.container>div.footer>div.part>div.slide ul li a:hover {
+    color: var(--hover-nav-buttons);
+}
+
+footer>div.container>div.footer>div.part>div.slide>img {
+    width: 15% !important;
+    height: 100% !important;
+    border-radius: 100% !important;
+    margin-right: 0.6rem !important;
+    border: none !important;
+}
+
+footer>div.container>div.footer>div.part:first-child>div.slide:nth-child(3) {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>div.container>div.footer>div.part:not(:first-child) div.slide:first-child {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>div.container>div.footer>div.part:not(:first-child) div.slide:nth-child(3) {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+footer>div.container>div.footer>div.part:not(:first-child) div.slide:first-child {
+    font-size: 1.5rem;
+}
+
+footer>div.container>div.footer>div.part:last-child div.slide:last-child ul li:not(:last-child), footer div.container div.footer div.part:last-child div.slide:last-child ul li:not(:nth-child(4)) {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+footer>div.container>div.footer>div.part:last-child {
+    width: 17% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer>div.container>div.footer>div.part div.line {
+    height: 0.5rem;
+    background-color: var(--hover-nav-buttons);
+    border-radius: 30px;
+}
+
+footer>div.container>div.footer>div.part:first-child div.line {
+    width: 35%;
+    margin: -15px 9rem 10px 0;
+}
+
+footer>div.container>div.footer>div.part:nth-child(2) div.line {
+    width: 65%;
+    margin: -15px -1.4rem 0px 10px;
+}
+
+footer>div.container>div.footer>div.part:nth-child(3) div.line {
+    width: 65%;
+    margin: -15px -2rem 10px 5px;
+}
+
+footer>div.container>div.footer>div.part:nth-child(4) div.line {
+    width: 45%;
+    margin: -15px -2.3rem 10px 0;
+}
+
+footer>div.container>div.footer>div.part:nth-child(5) div.line {
+    width: 80%;
+    margin: -15px -0.2rem 10px 0;
+}

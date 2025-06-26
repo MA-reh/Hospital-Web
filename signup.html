@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MENG Hospital</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/Fonts.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/signup.css" />
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <div>
+      <div>
+        <div>
+          <nav>
+            <div class="name-hospital">
+              <img src="./Images/Logo_Hospital.jpeg" alt="Hospital Logo" />
+              <h2>MENG Hospital</h2>
+            </div>
+            <div class="nav-links">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Clinic.html">Clinic</a></li>
+                <li><a href="./Booking.html">Booking</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li>
+                  <i class="fa-solid fa-bars" id="iconNav"></i>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- Drop Dawn Div For Nav Bar -->
+      <div class="drop-nav" id="navMenu">
+        <ul>
+          <li><a href="./Doctors_page.html">Doctors</a></li>
+          <li><a href="./Pharmacy.html">Pharmacy</a></li>
+          <li><a href="./Lab.html">Lab</a></li>
+          <li><a href="./Room-Booking.html">Room Booking</a></li>
+          <li><a href="./Awareness.html">Awareness</a></li>
+          <li><a href="./F.A.Q.html">F.A.Q</a></li>
+          <li><a href="./Achievements.html">Achievements</a></li>
+          <li>
+            <a href="./signin.html">Login</a><span> / </span
+            ><a href="./signup.html" class="line-page-nav">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+      <script>
+        let navButton = document.querySelector("#iconNav");
+        let navMenu = document.querySelector("#navMenu");
+        navButton.addEventListener("click", function () {
+          if (navMenu.style.display === "block") {
+            navMenu.style.display = "none";
+          } else {
+            navMenu.style.display = "block";
+          }
+        });
+      </script>
+    </div>
+    <!-- End Nav Bar -->
+
+    <!-- Sign Up Form -->
+
+    <section>
+      <div class="container">
+        <div class="form-container">
+          <div class="part">
+            <h1>Sign Up</h1>
+          </div>
+          <div class="part">
+            <form id="registerForm">
+              <div class="form">
+                <label for="SignUpName">Name</label>
+                <input
+                  type="text"
+                  id="SignUpName"
+                  placeholder="Enter your name"
+                  name="name"
+                  pattern="^[a-zA-Z\s]+$"
+                  title="Please enter a valid name (letters and spaces only)"
+                  minlength="2"
+                  maxlength="30"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form">
+                <label for="SignUpEmail">Email</label>
+                <input
+                  type="email"
+                  id="SignUpEmail"
+                  placeholder="Enter your email"
+                  name="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  title="Please enter a valid email address"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form">
+                <label for="SignUpPassword">Password</label>
+                <input
+                  type="password"
+                  id="SignUpPassword"
+                  placeholder="Enter your password"
+                  minlength="8"
+                  name="password"
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                  title="Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, and one number."
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <input type="submit" value="Sign Up" />
+              <!-- <button type="submit" form="">Sign Up</button> -->
+            </form>
+            <p>Already have an account? <a href="./signin.html">Sign In</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Sign Up Form -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="part">
+            <div class="slide">
+              <img src="./Images/Logo_Hospital.jpeg" alt="" />
+              <h2>MENG Hospital</h2>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <p>
+                MENG Hospital is dedicated to providing exceptional healthcare
+                services with a focus on patient well-being and advanced medical
+                practices.
+              </p>
+            </div>
+            <div class="slide">
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Nile Corniche, Al Eini,
+                El Sayeda Zeinab, Cairo Governorate
+              </p>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3><i class="fa-solid fa-location-pin"></i> Useful Links</h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./About.html"> About Us</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./index.html"> Our Services</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Pharmacy.html"> Pharmacy</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Doctors_page.html"> Find a Doctor</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Awareness.html"> Awareness</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3>
+                <i class="fa-solid fa-briefcase-medical"></i> Our Services
+              </h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Lab.html"> Lab</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Booking.html"> Booking</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Achievements.html"> Achievements </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Clinic.html"> Clinic</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./About.html"> About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3><i class="fa-solid fa-circle-info"></i> Support</h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./F.A.Q.html"> F.A.Q</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Awareness.html"> Awareness</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Doctors_page.html"> Find Doctor </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Room-Booking.html"> Room Booking</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./contact.html"> Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3>Contact Details</h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul class="social-links">
+                <li>
+                  <a href="https://web.telegram.org/k/#@MedoAyman200"
+                    ><i class="fa-brands fa-telegram"></i> MedoAyman200</a
+                  >
+                </li>
+                <li>
+                  <a href="https://instagram.com/mhmdayman515"
+                    ><i class="fa-brands fa-instagram"></i> mhmdayman515</a
+                  >
+                </li>
+                <li>
+                  <a href="https://wa.me/qr/OZJSQ4A6AYJOO1"
+                    ><i class="fa-brands fa-whatsapp"></i> (+20) 1040424647</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Medoscar100@gmail.com
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Call: +20 1040424647</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="./js/signup.js"></script>
+  </body>
+</html>

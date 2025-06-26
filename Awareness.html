@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENG Hospital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="./css/Fonts.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/Awareness.css">
+</head>
+<body>
+  
+    <!-- Nav Bar -->
+    <div>
+      <div>
+        <div>
+          <nav>
+            <div class="name-hospital">
+              <img src="./Images/Logo_Hospital.jpeg" alt="Hospital Logo" />
+              <h2>MENG Hospital</h2>
+            </div>
+            <div class="nav-links">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Clinic.html">Clinic</a></li>
+                <li><a href="./Booking.html">Booking</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li>
+                  <i class="fa-solid fa-bars" id="iconNav"></i>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- Drop Dawn Div For Nav Bar -->
+      <div class="drop-nav" id="navMenu">
+        <ul>
+          <li><a href="./Doctors_page.html">Doctors</a></li>
+          <li><a href="./Pharmacy.html">Pharmacy</a></li>
+          <li><a href="./Lab.html">Lab</a></li>
+          <li><a href="./Room-Booking.html">Room Booking</a></li>
+          <li><a href="./Awareness.html" class="line-page-nav">Awareness</a></li>
+          <li><a href="./F.A.Q.html">F.A.Q</a></li>
+          <li><a href="./Achievements.html">Achievements</a></li>
+          <li>
+            <a href="./signin.html">Login</a><span> / </span
+            ><a href="./signup.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+      <script>
+        let navButton = document.querySelector("#iconNav");
+        let navMenu = document.querySelector("#navMenu");
+        navButton.addEventListener("click", function () {
+          if (navMenu.style.display === "block") {
+            navMenu.style.display = "none";
+          } else {
+            navMenu.style.display = "block";
+          }
+        });
+      </script>
+    </div>
+    <!-- End Nav Bar -->
+  
+  <div class="section">
+    <h2>Warnings & What to Avoid</h2>
+    <div class="content">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+      <ul>
+        <li>Do not touch medical equipment or chemicals without permission.</li>
+        <li>Avoid entering restricted medical zones or operating rooms.</li>
+        <li>Never take any medication without a doctor’s supervision.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="section">
+      <h2>In Case of Burns, Injuries, or Infections</h2>
+      <div class="content">
+        <img src="./Images/house-fire-solid.svg" alt="">    
+        <ul>
+        <li><strong>Minor Burns:</strong> Cool the area under running water for 10 minutes. Do <strong>not</strong> apply ice directly.</li>
+        <li><strong>Cuts or Wounds:</strong> Clean with water, cover with a sterile bandage, and seek medical help.</li>
+        <li><strong>Signs of Infection:</strong> Redness, swelling, or heat — contact medical staff immediately.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="section">
+    <h2>How to Stay Healthy</h2>
+    <div class="content">
+        <i class="fa-solid fa-heart-pulse"></i>      <ul>
+        <li>Drink 6 to 8 glasses of water daily.</li>
+        <li>Get 6–8 hours of sleep every night.</li>
+        <li>Walk or exercise for at least 30 minutes per day.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="section">
+    <h2>Preventing Diseases</h2>
+    <div class="content">
+        <i class="fa-solid fa-head-side-mask"></i>
+      <ul>
+        <li>Wash hands regularly with soap and water.</li>
+        <li>Use hand sanitizer when water is not available.</li>
+        <li>Wear a mask in crowded places or when showing symptoms.</li>
+        <li>Follow recommended vaccination schedules.</li>
+      </ul>
+    </div>
+  </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="part">
+            <div class="slide">
+              <img src="./Images/Logo_Hospital.jpeg" alt="" />
+              <h2>MENG Hospital</h2>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <p>
+                MENG Hospital is dedicated to providing exceptional healthcare
+                services with a focus on patient well-being and advanced medical
+                practices.
+              </p>
+            </div>
+            <div class="slide">
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Nile Corniche, Al Eini,
+                El Sayeda Zeinab, Cairo Governorate
+              </p>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3><i class="fa-solid fa-location-pin"></i> Useful Links</h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./About.html"> About Us</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./index.html"> Our Services</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Pharmacy.html"> Pharmacy</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Doctors_page.html"> Find a Doctor</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Awareness.html"> Awareness</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3>
+                <i class="fa-solid fa-briefcase-medical"></i> Our Services
+              </h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Lab.html"> Lab</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Booking.html"> Booking</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Achievements.html"> Achievements </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Clinic.html"> Clinic</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./About.html"> About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3><i class="fa-solid fa-circle-info"></i> Support</h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./F.A.Q.html"> F.A.Q</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Awareness.html"> Awareness</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Doctors_page.html"> Find Doctor </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Room-Booking.html"> Room Booking</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./contact.html"> Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3>Contact Details</h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul class="social-links">
+                <li>
+                  <a href="https://web.telegram.org/k/#@MedoAyman200"
+                    ><i class="fa-brands fa-telegram"></i> MedoAyman200</a
+                  >
+                </li>
+                <li>
+                  <a href="https://instagram.com/mhmdayman515"
+                    ><i class="fa-brands fa-instagram"></i> mhmdayman515</a
+                  >
+                </li>
+                <li>
+                  <a href="https://wa.me/qr/OZJSQ4A6AYJOO1"
+                    ><i class="fa-brands fa-whatsapp"></i> (+20) 1040424647</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Medoscar100@gmail.com
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Call: +20 1040424647</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+</body>
+
+</html>
+
+<!-- <script src="er.java"></script> -->
+</body>
+</html>

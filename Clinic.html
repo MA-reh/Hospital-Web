@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MENG Hospital</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/Fonts.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/Clinic.css" />
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <div>
+      <div>
+        <div>
+          <nav>
+            <div class="name-hospital">
+              <img src="./Images/Logo_Hospital.jpeg" alt="Hospital Logo" />
+              <h2>MENG Hospital</h2>
+            </div>
+            <div class="nav-links">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li>
+                  <a href="./Clinic.html" class="line-page-nav">Clinic</a>
+                </li>
+                <li><a href="./Booking.html">Booking</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li>
+                  <i class="fa-solid fa-bars" id="iconNav"></i>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- Drop Dawn Div For Nav Bar -->
+      <div class="drop-nav" id="navMenu">
+        <ul>
+          <li><a href="./Doctors_page.html">Doctors</a></li>
+          <li><a href="./Pharmacy.html">Pharmacy</a></li>
+          <li><a href="./Lab.html">Lab</a></li>
+          <li><a href="./Room-Booking.html">Room Booking</a></li>
+          <li><a href="./Awareness.html">Awareness</a></li>
+          <li><a href="./F.A.Q.html">F.A.Q</a></li>
+          <li><a href="./Achievements.html">Achievements</a></li>
+          <li>
+            <a href="./signin.html">Login</a><span> / </span
+            ><a href="./signup.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+      <script>
+        let navButton = document.querySelector("#iconNav");
+        let navMenu = document.querySelector("#navMenu");
+        navButton.addEventListener("click", function () {
+          if (navMenu.style.display === "block") {
+            navMenu.style.display = "none";
+          } else {
+            navMenu.style.display = "block";
+          }
+        });
+      </script>
+    </div>
+    <!-- End Nav Bar -->
+
+    <header>
+      <div class="section-service">
+        <h2>Welcome To Our Clinics</h2>
+        <p>
+          At MENG Hospital, we offer a wide range of specialized clinics to
+          cater to your healthcare needs. Our clinics are staffed by experienced
+          professionals dedicated to providing the highest quality of care.
+        </p>
+      </div>
+      <div class="container-1">
+        <div class="card">
+          <div class="part">
+            <div class="text-container">
+              <p>
+                🔬 DNA Analysis "Genetic tests to identify inherited conditions
+                and disorders."
+                <br />
+                <br />
+                🧠 Gland "Check hormonal levels and gland functions."
+                <br />
+                <br />
+                🩸 Blood "Full blood count and essential blood components
+                check."
+                <br />
+                <br />
+                🎗 Tumor "Markers for early tumor detection and cancer
+                screening."
+                <br />
+                <br />
+                🦠 Virus "Tests for viral infections like Hepatitis, HIV, and
+                more."
+                <br />
+                <br />
+                🍬 Sugar "Blood glucose levels and diabetes indicators."
+                <br />
+                <br />
+                🧪 Liver "Liver enzymes and function evaluation."
+              </p>
+            </div>
+          </div>
+
+          <div class="part">
+            <img
+              src="./Images/GannaKhaled.jpeg"
+              alt="lab"
+              width="400rem"
+              height="380rem"
+            />
+          </div>
+          <div class="part">
+            <div class="text-container">
+              <p>
+                👨‍⚕️ Outpatient Clinics "Specialized consultations across all
+                departments."
+                <br />
+                <br />
+                🏥 Inpatient Services "Comfortable rooms and 24/7 medical care."
+                <br />
+                <br />
+                🧬 Diagnostic Imaging "X-ray, CT scan, and ultrasound
+                available."
+                <br />
+                <br />
+                🩺 Emergency Unit "Fully equipped ER for urgent medical cases."
+                <br />
+                <br />
+                💊 Pharmacy "On-site pharmacy for fast medication access."
+                <br />
+                <br />
+                🏃 Physical Therapy "Comprehensive rehabilitation and recovery
+                programs."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section 1 -->
+    <section id="Our-Services">
+      <div class="container">
+        <div class="part">
+          <div class="card">
+            <div class="information-card">
+              <img src="./Images/brain.jpg" alt="Neurology_Clinic" />
+            </div>
+            <div class="information-card">
+              <h3>Neurology Clinic</h3>
+            </div>
+            <div class="information-card">
+              <p>
+                Neurology Clinic specializes in disorders of the brain, spinal
+                cord, and nervous system. <br />
+                We diagnose and treat conditions like strokes <br />
+              </p>
+              <button>The Clinic</button>
+            </div>
+          </div>
+        </div>
+        <div class="part">
+          <div class="card">
+            <div class="information-card">
+              <img src="./Images/heart.jpg" alt="Heart_Clinic" />
+            </div>
+            <div class="information-card">
+              <h3>Cardiology Clinic</h3>
+            </div>
+            <div class="information-card">
+              <p>
+                Our Cardiology Clinic offers comprehensive care <br />
+                for heart-related conditions We provide advanced <br />
+                diagnostics, treatment for arrhythmias, <br />
+              </p>
+              <button>The Clinic</button>
+            </div>
+          </div>
+        </div>
+        <div class="part">
+          <div class="card">
+            <div class="information-card">
+              <img src="./Images/lung.jpg" alt="Respiratory_Clinic" />
+            </div>
+            <div class="information-card">
+              <h3>Pulmonology Clinic</h3>
+            </div>
+            <div class="information-card">
+              <p>
+                Dedicated to respiratory health, our <br />
+                Pulmonology Clinic addresses diseases <br />
+                affecting the lungs and breathing. <br />
+              </p>
+              <button>The Clinic</button>
+            </div>
+          </div>
+        </div>
+        <div class="part">
+          <div class="card">
+            <div class="information-card">
+              <img src="./Images/ear.jpg" alt="Ear_Clinic" />
+            </div>
+            <div class="information-card">
+              <h3>ENT Clinic</h3>
+            </div>
+            <div class="information-card">
+              <p>
+                The ENT Clinic offers specialized <br />
+                care for conditions affecting the ears, <br />
+                nose, throat, and related structures of the head. <br />
+              </p>
+              <button>The Clinic</button>
+            </div>
+          </div>
+        </div>
+        <div class="part">
+          <div class="card">
+            <div class="information-card">
+              <img src="./Images/blood.jpg" alt="Blood_Clinic" />
+            </div>
+            <div class="information-card">
+              <h3>Blood Transfusion</h3>
+            </div>
+            <div class="information-card">
+              <p>
+                Our Blood Transfusion Unit provides safe <br />
+                and efficient blood product transfusions <br />
+                for patients in need. We ensure rigorous testing <br />
+              </p>
+              <button>The Clinic</button>
+            </div>
+          </div>
+        </div>
+        <div class="part">
+          <div class="card">
+            <div class="information-card">
+              <img src="./Images/Eye.jpg" alt="Eye_Clinic" />
+            </div>
+            <div class="information-card">
+              <h3>Ophthalmology Clinic</h3>
+            </div>
+            <div class="information-card">
+              <p>
+                The Ophthalmology Clinic focuses on <br />
+                comprehensive eye care, from routine <br />
+                check-ups to complex surgical procedures. <br />
+              </p>
+              <button>The Clinic</button>
+            </div>
+          </div>
+        </div>
+        <div class="part">
+          <div class="card">
+            <div class="information-card">
+              <img src="./Images/liver.jpg" alt="Liver_Clinic" />
+            </div>
+            <div class="information-card">
+              <h3>Hepatology Clinic</h3>
+            </div>
+            <div class="information-card">
+              <p>
+                The Hepatology Clinic is dedicated to the <br />
+                diagnosis and management of liver diseases. <br />
+                We treat conditions such as hepatitis. <br />
+              </p>
+              <button>The Clinic</button>
+            </div>
+          </div>
+        </div>
+        <div class="part">
+          <div class="card">
+            <div class="information-card">
+              <img src="./Images/diges.jpg" alt="Digestive_System_Clinic" />
+            </div>
+            <div class="information-card">
+              <h3>Digestive System</h3>
+            </div>
+            <div class="information-card">
+              <p>
+                Our Gastroenterology Clinic focuses <br />
+                on disorders of the digestive system, <br />
+                including the esophagus, stomach. <br />
+              </p>
+              <button>The Clinic</button>
+            </div>
+          </div>
+        </div>
+        <div class="part">
+          <div class="card">
+            <div class="information-card">
+              <img src="./Images/kidney.jpg" alt="Kidney_Clinic" />
+            </div>
+            <div class="information-card">
+              <h3>Nephrology Clinic</h3>
+            </div>
+            <div class="information-card">
+              <p>
+                The Nephrology Clinic provides expert <br />
+                care for kidney-related conditions and <br />
+                diseases. We diagnose and manage chronic. <br />
+              </p>
+              <button>The Clinic</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section 1 -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="part">
+            <div class="slide">
+              <img src="./Images/Logo_Hospital.jpeg" alt="" />
+              <h2>MENG Hospital</h2>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <p>
+                MENG Hospital is dedicated to providing exceptional healthcare
+                services with a focus on patient well-being and advanced medical
+                practices.
+              </p>
+            </div>
+            <div class="slide">
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Nile Corniche, Al Eini,
+                El Sayeda Zeinab, Cairo Governorate
+              </p>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3><i class="fa-solid fa-location-pin"></i> Useful Links</h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./About.html"> About Us</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./index.html"> Our Services</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Pharmacy.html"> Pharmacy</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Doctors_page.html"> Find a Doctor</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Awareness.html"> Awareness</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3>
+                <i class="fa-solid fa-briefcase-medical"></i> Our Services
+              </h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Lab.html"> Lab</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Booking.html"> Booking</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Achievements.html"> Achievements </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Clinic.html"> Clinic</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./About.html"> About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3><i class="fa-solid fa-circle-info"></i> Support</h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./F.A.Q.html"> F.A.Q</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Awareness.html"> Awareness</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Doctors_page.html"> Find Doctor </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Room-Booking.html"> Room Booking</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./contact.html"> Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3>Contact Details</h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul class="social-links">
+                <li>
+                  <a href="https://web.telegram.org/k/#@MedoAyman200"
+                    ><i class="fa-brands fa-telegram"></i> MedoAyman200</a
+                  >
+                </li>
+                <li>
+                  <a href="https://instagram.com/mhmdayman515"
+                    ><i class="fa-brands fa-instagram"></i> mhmdayman515</a
+                  >
+                </li>
+                <li>
+                  <a href="https://wa.me/qr/OZJSQ4A6AYJOO1"
+                    ><i class="fa-brands fa-whatsapp"></i> (+20) 1040424647</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Medoscar100@gmail.com
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Call: +20 1040424647</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- <script src="./js/Clinic.js"></script> -->
+  </body>
+</html>

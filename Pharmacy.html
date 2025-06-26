@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MENG Hospital</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/Fonts.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/Pharmacy.css" />
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <div>
+      <div>
+        <div>
+          <nav>
+            <div class="name-hospital">
+              <img src="./Images/Logo_Hospital.jpeg" alt="Hospital Logo" />
+              <h2>MENG Hospital</h2>
+            </div>
+            <div class="nav-links">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Clinic.html">Clinic</a></li>
+                <li><a href="./Booking.html">Booking</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li>
+                  <i class="fa-solid fa-bars" id="iconNav"></i>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- Drop Dawn Div For Nav Bar -->
+      <div class="drop-nav" id="navMenu">
+        <ul>
+          <li><a href="./Doctors_page.html">Doctors</a></li>
+          <li><a href="./Pharmacy.html" class="line-page-nav">Pharmacy</a></li>
+          <li><a href="./Lab.html">Lab</a></li>
+          <li><a href="./Room-Booking.html">Room Booking</a></li>
+          <li><a href="./Awareness.html">Awareness</a></li>
+          <li><a href="./F.A.Q.html">F.A.Q</a></li>
+          <li><a href="./Achievements.html">Achievements</a></li>
+          <li>
+            <a href="./signin.html">Login</a><span> / </span
+            ><a href="./signup.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+      <script>
+        let navButton = document.querySelector("#iconNav");
+        let navMenu = document.querySelector("#navMenu");
+        navButton.addEventListener("click", function () {
+          if (navMenu.style.display === "block") {
+            navMenu.style.display = "none";
+          } else {
+            navMenu.style.display = "block";
+          }
+        });
+      </script>
+    </div>
+    <!-- End Nav Bar -->
+
+    <!-- Header Medicines -->
+
+    <header>
+      <div class="header-container">
+        <div class="header-content">
+          <h1>Welcome To Our Pharmacy</h1>
+          <p>
+            Welcome to our pharmacy, where your health is our priority. We offer
+            a wide range of medications, health products, and expert advice to
+            help you manage your health effectively.
+          </p>
+        </div>
+        <div class="header-cards">
+          <div class="card">
+            <div class="card-content">
+              <img src="./Images/medicine1.jpg" alt="Medicines A To E" />
+            </div>
+            <div class="card-content"><h4>Medicines From A To E</h4></div>
+            <div class="card-content">
+              <p>
+                Here we can help you to choose medicine <br />
+                and you can submit your prescription to <br />
+                introduce the wright medicine to you .
+              </p>
+            </div>
+            <div class="card-content">
+              <button>Pharmacy</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <img src="./Images/medicine2.jpg" alt="Medicines F To K" />
+            </div>
+            <div class="card-content"><h4>Medicines From F To K</h4></div>
+            <div class="card-content">
+              <p>
+                Here we can help you to choose medicine <br />
+                and you can submit your prescription to <br />
+                introduce the wright medicine to you
+              </p>
+            </div>
+            <div class="card-content">
+              <button>Pharmacy</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <img src="./Images/medicine3.jpg" alt="Medicines From L To R" />
+            </div>
+            <div class="card-content"><h4>Medicines From L To R</h4></div>
+            <div class="card-content">
+              <p>
+                Here we can help you to choose medicine <br />
+                and you can submit your prescription to <br />
+                introduce the wright medicine to you .
+              </p>
+            </div>
+            <div class="card-content">
+              <button>Pharmacy</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <img src="./Images/medicine4.jpg" alt="Medicines From S To Z" />
+            </div>
+            <div class="card-content"><h4>Medicines From S To Z</h4></div>
+            <div class="card-content">
+              <p>
+                Here we can help you to choose medicine <br />
+                and you can submit your prescription to <br />
+                introduce the wright medicine to you
+              </p>
+            </div>
+            <div class="card-content">
+              <button>Pharmacy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- End Header Medicines -->
+
+    <!-- !Section Medicine Online -->
+
+    <section class="section-order">
+      <div class="container-1">
+        <div class="card-online-order">
+          <img src="./Images/order2 (1).jpeg" alt="" />
+        </div>
+
+        <div class="card-online-order">
+          <div class="parts">
+            <h3>Here You Can Order Any Medicine Online</h3>
+          </div>
+          <div class="parts">
+            <p>
+              * Home Delivery Service : <br />
+              * We offer a convenient home delivery service for your
+              medications. <br />
+              * This service is available for all patients, including those who
+              have been discharged from the hospital. <br />
+              * Our team ensures that your medications are delivered safely and
+              promptly to your doorstep. <br />
+              * Delivery is available within [Specify Area/City] and may be
+              subject to a nominal delivery fee. <br />
+              * Please allow [Specify Time Frame] for delivery after your
+              prescription is verified. <br />
+              * How to Order Your Medications Online : <br />
+              * Request Your Delivery : <br />
+              * Online: Fill out our simple online delivery request form [Link
+              to Form]. <br />
+              * By Phone: Call our pharmacy at (+20) 1040424647 during business
+              hours. <br />
+              * In-person: Inform the pharmacy staff at the hospital counter
+              that you prefer home delivery .<br />
+              * Prescription Verification : <br />
+              * Our pharmacy team will verify your prescription with your
+              doctor. <br />
+              * You will receive a confirmation message once your prescription
+              is ready for delivery. <br />
+              * You can pay securely online or arrange payment upon delivery (if
+              applicable). <br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Medicine Online -->
+
+    <!-- Section 2 appointment  -->
+
+    <section class="section-appointment">
+      <div class="container-2">
+        <div class="card-appointment">
+          <div class="part-appointment">
+            <h3>Upload Your Prescription To Help You</h3>
+          </div>
+          <div class="part-appointment">
+            <p>
+              * Please upload your prescription file in PDF or image format.
+              <br />
+              * Ensure that the prescription is clear and legible for accurate
+              processing.
+            </p>
+            <form>
+              <label>
+                <h5>Upload Your Prescription</h5>
+              </label>
+              <script>
+                let prescriptionInput = document.getElementById(
+                  "Button-Prescription"
+                );
+
+                console.log(prescriptionInput);
+                prescriptionInput.addEventListener("click", function (event) {
+                  event.preventDefault(); // Prevent form submission
+                  alert("Your prescription has been submitted successfully!");
+                  alert("We will contact you soon via email.");
+                });
+              </script>
+              <input
+                type="email"
+                name="Email-Prescription"
+                id="Email-Prescription"
+                placeholder="Enter your Email So We Can Contact You"
+                required
+              />
+              <input type="file" name="Prescription" required />
+              <input type="submit" value="Submit" id="Button-Prescription" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section 2 appointment -->
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="part">
+            <div class="slide">
+              <img src="./Images/Logo_Hospital.jpeg" alt="" />
+              <h2>MENG Hospital</h2>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <p>
+                MENG Hospital is dedicated to providing exceptional healthcare
+                services with a focus on patient well-being and advanced medical
+                practices.
+              </p>
+            </div>
+            <div class="slide">
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Nile Corniche, Al Eini,
+                El Sayeda Zeinab, Cairo Governorate
+              </p>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3><i class="fa-solid fa-location-pin"></i> Useful Links</h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./About.html"> About Us</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./index.html"> Our Services</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Pharmacy.html"> Pharmacy</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Doctors_page.html"> Find a Doctor</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Awareness.html"> Awareness</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3>
+                <i class="fa-solid fa-briefcase-medical"></i> Our Services
+              </h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Lab.html"> Lab</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Booking.html"> Booking</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Achievements.html"> Achievements </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Clinic.html"> Clinic</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./About.html"> About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3><i class="fa-solid fa-circle-info"></i> Support</h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./F.A.Q.html"> F.A.Q</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Awareness.html"> Awareness</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Doctors_page.html"> Find Doctor </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./Room-Booking.html"> Room Booking</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <a href="./contact.html"> Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="part">
+            <div class="slide">
+              <h3>Contact Details</h3>
+            </div>
+            <div class="line"></div>
+            <div class="slide">
+              <ul class="social-links">
+                <li>
+                  <a href="https://web.telegram.org/k/#@MedoAyman200"
+                    ><i class="fa-brands fa-telegram"></i> MedoAyman200</a
+                  >
+                </li>
+                <li>
+                  <a href="https://instagram.com/mhmdayman515"
+                    ><i class="fa-brands fa-instagram"></i> mhmdayman515</a
+                  >
+                </li>
+                <li>
+                  <a href="https://wa.me/qr/OZJSQ4A6AYJOO1"
+                    ><i class="fa-brands fa-whatsapp"></i> (+20) 1040424647</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Medoscar100@gmail.com
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Call: +20 1040424647</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

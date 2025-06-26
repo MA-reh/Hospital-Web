@@ -1,0 +1,181 @@
+header {
+    height: 87.5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+}
+
+header>div.header-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+header div.header-content div.part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+header div.header-content div.part:nth-of-type(2) {
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+header div.header-content div.part a.btn {
+    background-color: var(--background-nav);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    color: #fff;
+    border: #000 solid 2px;
+}
+
+header div.header-content div.part a.btn:hover {
+    background-color: var(--hover-nav-buttons);
+    color: rgb(0, 0, 0);
+    border: #000 solid 2px;
+}
+
+header div.header-content .part h1 {
+    font-size: 3rem;
+    color: #000;
+}
+
+header div.header-content .part p {
+    color: #000;
+    text-align: left;
+    line-height: 2.5rem;
+
+}
+
+header div.header-image {
+    width: 70%;
+    height: 80%;
+    /* margin-right: 6rem; */
+}
+
+header div.header-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+header div.header-image img {
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, black 100%);
+    mask-image: linear-gradient(to top, transparent 0%, black 20%);
+}
+
+/* Section 1 */
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div.container {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section div.container div.section-service {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div.container div.section-service h2 {
+    font-size: 2rem;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+section div.container div.part {
+    width: calc(100% / 3);
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div.container div.part div.card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section div.container div.part div.card div.information-card {
+    width: 70%;
+    height: 70%;
+}
+
+section div.container div.part div.card div.information-card:nth-child(1) {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+section div.container div.part div.card div.information-card:nth-child(2) {
+    width: 70%;
+    height: 30%;
+    color: #000 !important;
+    font-size: 1.4rem;
+
+}
+
+section div.container div.part div.card div.information-card:nth-child(3) {
+    text-align: left;
+}
+
+section div.container div.part div.card div.information-card i {
+    font-size: 3rem;
+    color: var(--background-nav) !important;
+    margin-bottom: 1rem;
+}
+
+section div.container div.part div.card div.information-card h3 {
+    color: var(--background-nav) !important;
+    text-align: center;
+}
+
+section div.container div.part div.card div.information-card p {
+    color: #3f3f3f !important;
+    text-align: left;
+}
+
+/* End Section 1 */

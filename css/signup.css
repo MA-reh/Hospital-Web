@@ -1,0 +1,139 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 87.5vh;
+}
+
+section div.container {
+    width: 100%;
+    padding: 20px;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section div.container div.form-container {
+    background-color: var(--divs-login);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 25rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    padding: 20px;
+}
+
+section div.container div.form-container div.part:first-child {
+    width: 100%;
+    height: 25%;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    cursor: context-menu;
+}
+
+section div.container div.form-container div.part:nth-child(2) {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section div.container div.form-container div.part:nth-child(2) form {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section div.container div.form-container div.part:nth-child(2) form div.form {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section div.container div.form-container div.part:nth-child(2) form div.form:last-child {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div.container div.form-container div.part:nth-child(2):not(input) p {
+    color: rgba(241, 241, 241, 0.639);
+    /* ثابت */
+    margin-top: 30px;
+}
+
+section div.container div.form-container div.part:nth-child(2) a:hover {
+    color: var(--hover-nav-buttons);
+}
+
+section div.container div.form-container div.part:nth-child(2) form div.form label {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2.5rem 16.5rem 0.5rem 0.5rem;
+}
+
+section div.container div.form-container div.part:nth-child(2) input {
+    width: 22.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: rgba(236, 232, 232, 0.854);
+    border: none;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+section div.container div.form-container div.part:nth-child(2) input:focus {
+    background-color: rgba(58, 56, 56, 0.854);
+    border: 2px solid #06010189;
+    box-shadow: #000 0px 0px 10px rgba(25, 25, 25, 0.749);
+    color: #fff;
+    outline: none;
+}
+
+section div.container div.form-container div.part:nth-child(2) input:focus::placeholder {
+    color: #d0cfcf;
+}
+
+section div.container div.form-container div.part:nth-child(2) input[type="submit"] {
+    width: 22.5rem;
+    height: 2.5rem;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: rgb(230, 227, 227);
+    margin: 2rem 0px 0.5rem 0.5%;
+    height: 2.5rem;
+    border-radius: 10px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+section div.container div.form-container div.part:nth-child(2) input[type="submit"]:hover {
+    background-color: rgba(182, 182, 182, 0.854);
+    color: #000;
+}

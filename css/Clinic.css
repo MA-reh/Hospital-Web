@@ -1,0 +1,326 @@
+header {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+
+header div.section-service {
+    width: 50%;
+    height: 25%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10rem 0 0 20px;
+    animation: moveUpY 1.2s ease-in-out;
+}
+
+header div.section-service h2 {
+    font-size: 2.5rem;
+    color: var(--background-nav);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+header div.section-service p {
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+header div.container-1 {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+header div.container-1 div.card {
+    width: 80%;
+    height: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: row;
+}
+
+header div.container-1 div.card>div.part:nth-child(2) {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div.container-1 div.card>div.part:nth-child(2) img {
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: moveDownY 1.2s ease-in-out;
+}
+
+header div.container-1 div.card>div.part:nth-child(1), header div.container-1 div.card>div.part:nth-child(3) {
+    width: 33%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: var(--background-body);
+    border: 5px solid var(--background-nav);
+    padding: 1rem 2rem;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header div.container-1 div.card>div.part:nth-child(1) {
+    animation: moveRightX 1.2s ease-in-out;
+}
+
+header div.container-1 div.card>div.part:nth-child(3) {
+    animation: moveLeftX 1.2s ease-in-out;
+}
+
+
+header div.container-1 div.card>div.part:nth-child(1) p, header div.container-1 div.card>div.part:nth-child(3) p {
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+header div.container-1 div.card>div.part:nth-child(1) div.text-container:nth-child(1) {
+    width: 100%;
+    height: 100%;
+}
+
+header div.container-1 div.card>div.part:nth-child(3) div.text-container:nth-child(1) {
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+header div.container-1 div.card div.part:nth-child(3) p {
+    color: #000;
+    border: 2px solid var(--background-nav);
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin: 0px 0px 0 0px;
+    padding: 20px;
+} */
+
+/* Section 1 */
+
+section {
+    width: 100%;
+    height: 250vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+section div.container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section div.container div.section-service {
+    width: 90%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+section div.container div.section-service h2 {
+    font-size: 2rem;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+section div.container div.section-service p {
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+section div.container div.part {
+    width: calc(100% / 3);
+    height: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+section div.container div.part div.card {
+    width: 95%;
+    height: 100%;
+    background-color: rgb(227, 227, 223);
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+section div.container div.part div.card div.information-card {
+    width: 100%;
+
+}
+
+section div.container div.part div.card div.information-card:nth-child(1) {
+    height: 60%;
+    border-radius: 30px;
+}
+
+section div.container div.part div.card div.information-card:nth-child(2) {
+    height: 10%;
+}
+
+section div.container div.part div.card div.information-card:nth-child(3) {
+    height: 30%;
+}
+
+section div.container div.part div.card div.information-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+
+}
+
+section div.container div.part div.card div.information-card h3 {
+    color: var(--background-nav);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+
+section div.container div.part div.card div.information-card p {
+    color: #000;
+    font-size: 1.0rem;
+    font-weight: 400;
+    text-align: center;
+    /* margin: 10px 0; */
+}
+
+section div.container div.part div.card div.information-card button {
+    font-size: 1.1rem;
+    padding: 0.5rem 4.5rem;
+    margin-top: 12px;
+    margin-left: 7rem;
+    background-color: var(--background-nav);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.6s ease;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+section div.container div.part div.card div.information-card button:hover {
+    color: var(--background-nav);
+    background-color: var(--hover-nav-buttons);
+    border: 2px solid #000;
+    color: #000;
+}
+
+/* End Section 1 */
+
+
+
+
+
+
+
+@keyframes moveRightX {
+    0% {
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+
+    30% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveLeftX {
+    0% {
+        opacity: 0;
+        transform: translateX(400px);
+    }
+
+    30% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes moveUpY {
+    0% {
+        opacity: 0;
+        transform: translateY(-400px);
+    }
+
+    75% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes moveDownY {
+    0% {
+        opacity: 0;
+        transform: translateY(400px);
+    }
+
+    30% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
