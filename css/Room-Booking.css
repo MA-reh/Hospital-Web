@@ -5,18 +5,18 @@
   align-items: center;
   justify-content: center;
   padding: 30px;
-  margin-top: 25px;
+  margin-top: 2px;
 }
 
 .containerr {
   justify-content: center;
   background-image: url("../Images/MAPhoto2.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   width: 95%;
   height: 100%;
-  border: solid 6px var(--background-nav);
+  /* border: solid 6px var(--background-nav); */
   border-radius: 25px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
   padding: 10px;
@@ -40,7 +40,7 @@
   margin-bottom: 15px;
   text-align: center;
   color: var(--background-nav);
-  text-shadow: 0 0 2px #b8e8e8;
+  text-shadow: 0 0 2px #383939;
 }
 
 .typewriter {
@@ -49,45 +49,6 @@
   border-right: 2px solid #bdcace;
   width: 0;
   animation: typing 3s steps(30, end) forwards, blink 0.7s infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-
-  to {
-    width: 100%
-  }
-}
-
-@keyframes blink {
-  0%, 100% {
-    border-color: transparent
-  }
-
-  50% {
-    border-color: #00c8ff
-  }
-}
-
-.submit {
-  background-color: var(--background-nav);
-  color: #fff;
-  padding: 12px 25px;
-  border: 2px solid #000000;
-  border-radius: 15px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 15px;
-}
-
-.submit:hover {
-  color: rgb(0, 0, 0);
-  background-color: var(--hover-nav-buttons);
 }
 
 .button-group {
@@ -104,7 +65,7 @@
   font-size: 30px;
 }
 
-.submit.secondary {
+.submit {
   background-color: var(--background-nav);
   color: #fff;
   padding: 12px 25px;
@@ -116,14 +77,13 @@
   text-decoration: none;
   display: inline-block;
   margin-top: 15px;
+  font-size: 1rem;
 }
 
-.submit.secondary:hover {
+.submit:hover {
   color: rgb(0, 0, 0);
   background-color: var(--hover-nav-buttons);
 }
-
-
 
 .booking-form {
   display: flex;
@@ -139,7 +99,6 @@
   justify-content: space-between;
 }
 
-
 .booking-form input,
 .booking-form select {
   width: calc(50% - 10px);
@@ -153,18 +112,15 @@
   transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
 }
 
-
 .booking-form .submit1,
 .booking-form .last-field {
   width: calc(50% - 10px);
 }
 
-
 .booking-form select option {
   background-color: #ffffff;
   color: var(--background-nav);
 }
-
 
 .booking-form input:hover,
 .booking-form select:hover {
@@ -173,14 +129,12 @@
   cursor: pointer;
 }
 
-
 .booking-form input:focus,
 .booking-form select:focus {
   outline: none;
   border-color: var(--background-nav);
   box-shadow: 0 0 10px var(--background-nav);
 }
-
 
 .submit1 {
   background-color: var(--background-nav);
@@ -192,7 +146,6 @@
   border: #000000 2px solid;
   cursor: pointer;
 }
-
 
 .submit1:hover {
   transform: translateY(-2px);
@@ -209,18 +162,6 @@
 .visible {
   display: block !important;
   animation: fadeIn 1s ease forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .page2 {

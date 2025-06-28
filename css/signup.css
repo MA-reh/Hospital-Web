@@ -7,17 +7,38 @@ section {
 }
 
 section div.container {
-    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80%;
     padding: 20px;
     height: 90%;
-    border-radius: 10px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.07);
     display: flex;
-    align-items: center;
     justify-content: center;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 10);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.image-container {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 section div.container div.form-container {
-    background-color: var(--divs-login);
+    animation: fadeInUp 0.8s ease-out forwards;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,6 +59,11 @@ section div.container div.form-container div.part:first-child {
     color: #fff;
     font-weight: 600;
     cursor: context-menu;
+}
+
+
+section div.container div.form-container div.part:first-child h1 {
+    color: var(--background-nav);
 }
 
 section div.container div.form-container div.part:nth-child(2) {
@@ -75,9 +101,13 @@ section div.container div.form-container div.part:nth-child(2) form div.form:las
 }
 
 section div.container div.form-container div.part:nth-child(2):not(input) p {
-    color: rgba(241, 241, 241, 0.639);
-    /* ثابت */
+    color: rgba(0, 0, 0, 0.816);
+    font-size: 1.2rem;
     margin-top: 30px;
+}
+
+section div.container div.form-container div.part:nth-child(2):not(input) a {
+    color: var(--background-nav);
 }
 
 section div.container div.form-container div.part:nth-child(2) a:hover {
@@ -85,7 +115,7 @@ section div.container div.form-container div.part:nth-child(2) a:hover {
 }
 
 section div.container div.form-container div.part:nth-child(2) form div.form label {
-    color: #fff;
+    color: var(--background-nav);
     font-size: 1.5rem;
     font-weight: 600;
     margin: 2.5rem 16.5rem 0.5rem 0.5rem;
@@ -116,6 +146,11 @@ section div.container div.form-container div.part:nth-child(2) input:focus::plac
     color: #d0cfcf;
 }
 
+section div.container div.form-container div.part:nth-child(2) input[type="submit"]:hover {
+    background-color: rgba(182, 182, 182, 0.854);
+    color: #000;
+}
+
 section div.container div.form-container div.part:nth-child(2) input[type="submit"] {
     width: 22.5rem;
     height: 2.5rem;
@@ -127,13 +162,8 @@ section div.container div.form-container div.part:nth-child(2) input[type="submi
     margin: 2rem 0px 0.5rem 0.5%;
     height: 2.5rem;
     border-radius: 10px;
-    color: #000;
+    color: var(--background-nav);
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-}
-
-section div.container div.form-container div.part:nth-child(2) input[type="submit"]:hover {
-    background-color: rgba(182, 182, 182, 0.854);
-    color: #000;
 }

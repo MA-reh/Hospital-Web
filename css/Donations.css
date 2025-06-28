@@ -1,0 +1,233 @@
+header {
+    height: 87.5vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    scroll-behavior: smooth;
+
+}
+
+header div.header-image {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: moveRightX 1.2s ease-in-out;
+}
+
+header div.header-image img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+}
+
+header>div.header-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: moveLeftX 1.2s ease-in-out;
+
+}
+
+header div.header-content div.part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header div.header-content div.part:nth-of-type(2) {
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+header div.header-content div.part a.btn {
+    background-color: var(--background-nav);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    color: #fff;
+    border: #000 solid 2px;
+}
+
+header div.header-content div.part a.btn:hover {
+    background-color: var(--hover-nav-buttons);
+    color: rgb(0, 0, 0);
+    border: #000 solid 2px;
+}
+
+header div.header-content .part h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #000;
+}
+
+header div.header-content .part p {
+    color: #000;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    line-height: 2.0rem;
+}
+
+/* End Header */
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+section div.donations-content {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: moveUpY 1.4s ease-in-out;
+
+}
+
+section div.donations-content h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--background-nav);
+}
+
+section div.donations-content p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #000;
+    margin: 0.5rem 0;
+}
+
+section div.donations-image {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section div.donations-image div.sections-donations:first-child {
+    width: 40%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: moveRightX 1.2s ease-in-out;
+}
+
+section div.donations-image div.sections-donations:nth-child(2) {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section div.donations-image div.sections-donations img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+}
+
+section div.donations-image div.parts {
+    width: 45%;
+    height: 40%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section div.donations-image div.lineRow {
+    width: 45%;
+    height: 2px;
+    /* margin: 0 1rem; */
+    background-color: var(--background-nav);
+    /* margin: 1rem 0; */
+}
+
+section div.donations-image div.lineColumn {
+    width: 2px;
+    height: 40%;
+    margin: 0 2rem;
+    background-color: var(--background-nav);
+}
+
+section div.donations-image div.gap {
+    width: 7%;
+}
+
+
+
+section div.donations-image div.parts h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--background-nav);
+}
+
+section div.donations-image div.parts p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #000;
+    margin: 0.5rem 0;
+}
+
+section div.donations-image div:nth-child(1) {
+    animation: moveUpY 1.2s ease-in-out;
+}
+
+section div.donations-image div:nth-child(2) {
+    animation: moveUpY 1.1s ease-in-out;
+}
+
+section div.donations-image div:nth-child(3) {
+    animation: moveUpY 1.2s ease-in-out;
+}
+
+section div.donations-image div:nth-child(4) {
+    animation: moveRightX 1.1s ease-in-out;
+}
+
+section div.donations-image div:nth-child(6) {
+    animation: moveLeftX 1.1s ease-in-out;
+}
+
+section div.donations-image div.pa:nth-child(7) {
+    animation: moveDownY 1.3s ease-in-out;
+}
+
+section div.donations-image div:nth-child(8) {
+    animation: moveDownY 1.1s ease-in-out;
+}
+
+section div.donations-image div:nth-child(9) {
+    animation: moveDownY 1.3s ease-in-out;
+}

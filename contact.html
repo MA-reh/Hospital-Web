@@ -50,9 +50,15 @@
           <li><a href="./Awareness.html">Awareness</a></li>
           <li><a href="./F.A.Q.html">F.A.Q</a></li>
           <li><a href="./Achievements.html">Achievements</a></li>
+          <li><a href="./Donations.html">Donations</a></li>
           <li>
-            <a href="./signin.html">Login</a><span> / </span
-            ><a href="./signup.html">Sign Up</a>
+            <div id="logIn">
+              <a href="./Login.html">Login</a><span> / </span
+              ><a href="./signup.html">Sign Up</a>
+            </div>
+            <a href="" style="display: none" id="logOut" onclick="logout()"
+              >Log Out</a
+            >
           </li>
         </ul>
       </div>
@@ -66,6 +72,20 @@
             navMenu.style.display = "block";
           }
         });
+
+        if (localStorage.getItem("loggedInUser") !== null) {
+          document.getElementById("logIn").style.display = "none";
+          document.getElementById("logOut").style.display = "block";
+        }
+
+        function logout() {
+          document.getElementById("logIn").style.display = "block";
+          document.getElementById("logOut").style.display = "none";
+          localStorage.removeItem("signEmail");
+          localStorage.removeItem("signPassword");
+          localStorage.removeItem("loggedInUser");
+          window.location.href = "index.html";
+        }
       </script>
     </div>
     <!-- End Nav Bar -->
@@ -84,7 +104,7 @@
               alt="all on phone"
             />
           </div>
-          <div class="map-container">
+          <!-- <div class="map-container">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6908.457304166399!2d31.222473177709954!3d30.03029740000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584733c9000f73%3A0xbd6063fdaa32a6de!2z2YXYs9iq2LTZgdmJINmC2LXYsSDYp9mE2LnZitmG2Yog2KfZhNiq2LnZhNmK2YXZiiDYp9mE2KzYr9mK2K8!5e0!3m2!1sen!2seg!4v1750289775475!5m2!1sen!2seg"
               allowfullscreen=""
@@ -92,20 +112,33 @@
               referrerpolicy="no-referrer-when-downgrade"
             >
             </iframe>
-          </div>
+          </div> -->
         </div>
         <div class="col">
           <div class="col form-side">
-            <form class="contact-form">
-              <input type="text" placeholder="Full Name" required />
-              <input type="email" placeholder="Email Address" required />
+            <form class="contact-form" id="contactForm">
+              <input
+                type="text"
+                placeholder="Full Name"
+                id="FullName"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                id="Email"
+                required
+              />
               <textarea
                 type="text"
                 placeholder="Your Message"
-                required
                 size="1000"
+                id="Message"
+                required
               ></textarea>
-              <button type="submit" class="submit">Send Message</button>
+              <button type="submit" class="submit" id="SubmitForm">
+                Send Message
+              </button>
               <div class="typewriter">
                 Have a question, need assistance,<br />
                 or want to schedule an appointment? We’re always here for
@@ -272,15 +305,8 @@
     </footer>
     <!-- End Footer -->
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector(".contact-form");
-        form.addEventListener("submit", function () {
-          alert(
-            "Thank you for contacting us! your message has been sent successfully."
-          );
-        });
-      });
-    </script>
+    <script></script>
+
+    <script src="./js/ContactUs.js"></script>
   </body>
 </html>

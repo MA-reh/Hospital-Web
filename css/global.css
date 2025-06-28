@@ -1,11 +1,11 @@
 :root {
     --background-nav: rgb(8, 60, 117);
-    --background-nav-drop: rgba(8, 60, 117, 0.8);
+    --background-nav-drop: rgba(8, 60, 117, 0.9);
     --background-footer: rgba(8, 60, 117, 0.9);
-    --background-body: rgba(199, 200, 201, 0.687);
+    --background-body: rgb(243, 243, 243);
     --hover-nav-buttons: rgba(32, 146, 245, 0.731);
-    --icons-footer: rgba(190, 190, 190, 0.8);
-    --divs-login: rgba(59, 66, 96, 0.872);
+    --icons-footer: rgba(201, 201, 201, 0.8);
+    --divs-login: rgb(8, 61, 117);
 }
 
 * {
@@ -16,11 +16,237 @@
     color: #fff;
 }
 
+html, body {
+    scroll-behavior: smooth !important;
+}
+
+
 body {
-    /* background-color: var(--background-body); */
     background-image: url("../Images/Ro5am.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+/* Animations */
+
+@keyframes moveRightX {
+    0% {
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+
+    40% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveLeftX {
+    0% {
+        opacity: 0;
+        transform: translateX(400px);
+    }
+
+    40% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes moveUpY {
+    0% {
+        opacity: 0;
+        transform: translateY(-400px);
+    }
+
+    70% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes moveDownY {
+    0% {
+        opacity: 0;
+        transform: translateY(400px);
+    }
+
+    40% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    4% {
+        opacity: 1;
+    }
+
+    16% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--background-nav)
+    }
+}
+
+
+@keyframes fadeInFromTop {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes border-move {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+@keyframes down {
+    0% {
+        opacity: 0;
+        transform: translateY(-70px);
+    }
+
+    50% {
+        opacity: 0.0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes card1 {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes card2 {
+    0% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

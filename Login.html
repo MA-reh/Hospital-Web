@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="./css/Fonts.css" />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/Room-Booking.css" />
+    <link rel="stylesheet" href="./css/Login.css" />
   </head>
-
   <body>
     <!-- Nav Bar -->
     <div>
@@ -45,16 +44,19 @@
           <li><a href="./Doctors_page.html">Doctors</a></li>
           <li><a href="./Pharmacy.html">Pharmacy</a></li>
           <li><a href="./Lab.html">Lab</a></li>
-          <li><a href="./Room-Booking.html" class="line-page-nav">Room Booking</a></li>
+          <li><a href="./Room-Booking.html">Room Booking</a></li>
           <li><a href="./Awareness.html">Awareness</a></li>
           <li><a href="./F.A.Q.html">F.A.Q</a></li>
           <li><a href="./Achievements.html">Achievements</a></li>
           <li><a href="./Donations.html">Donations</a></li>
           <li>
             <div id="logIn">
-              <a href="./Login.html">Login</a><span> / </span><a href="./signup.html">Sign Up</a>
+              <a href="./Login.html" class="line-page-nav">Login</a
+              ><span> / </span><a href="./signup.html">Sign Up</a>
             </div>
-            <a href="" style="display: none" id="logOut" onclick="logout()">Log Out</a>
+            <a href="" style="display: none" id="logOut" onclick="logout()"
+              >Log Out</a
+            >
           </li>
         </ul>
       </div>
@@ -86,173 +88,54 @@
     </div>
     <!-- End Nav Bar -->
 
-    <!-- Header RoomBooking -->
-    <div class="page1">
-    <div class="containerr">
-        <div class="box">
-         <div class="text typewriter">
-      <h1> Book your room </h1>
-      <h2>Welcome to MENG Hospital rooms.</h2>
-      <div class="button-group">
-      <button type="button" class="submit" onclick="showForm()">Book now</button>
-      <span class="or-text">or</span>
-      <a href="#Page2" class="submit secondary">Know more</a>
+    <!-- Sign In Section -->
 
-    </div>
-    </div>
- <div class="booking-container hidden" id="bookingForm">
-  <div class="form-wrapper">
-    <div class="form-card">
-      <form class="booking-form">
-        <input type="text" placeholder="Full Name" required />
-        <input type="text" placeholder="Your phone" required />
+    <!-- <section></section> -->
 
-        <select id="specialty" required>
-          <option disabled selected>Room type</option>
-          <option>Standard</option>
-          <option>Private</option>
-          <option>VIP</option>
-          <option>(ICU)</option>
-        </select>
+    <section>
+      <div class="container">
+        <div class="image-container">
+          <img src="./Images/myphoto1.png" alt=" signin-img" />
+        </div>
+        <div class="form-container" id="LogBackground">
+          <div class="part">
+            <h1>Login</h1>
+          </div>
+          <div class="part">
+            <form id="loginForm">
+              <div class="form">
+                <label for="SignInEmail">Email:</label>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  required
+                  id="SignInEmail"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form">
+                <label for="SignInPassword">Password:</label>
+                <input
+                  type="password"
+                  placeholder="Enter your password"
+                  required
+                  id="SignInPassword"
+                  autocomplete="off"
+                />
+              </div>
+              <p>Don't have an account? <a href="./signup.html">Sign Up</a></p>
+              <input type="submit" value="Sign In" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <select id="many-days" required>
-          <option disabled selected>many day</option>
-          <option>1 day</option>
-          <option>2 days</option>
-          <option>3 Days</option>
-          <option>4 days</option>
-          <option>5 days</option>
-          <option>More</option>
-        </select>
-
-        <select id="day" required>
-          <option disabled selected>first Day</option>
-          <option>Saturday</option>
-          <option>Sunday</option>
-          <option>Monday</option>
-          <option>Tuesday</option>
-          <option>Wednesday</option>
-          <option>Thursday</option>
-        </select>
-
-        <button type="submit" class="submit1">End</button>
-      </form>
-    </div>
-  </div>
-</div>
-     </div>
-    </div>
-
-  </div>
-
-<div class="page2" id="Page2">
-<div id="roomDetails">
-    <div class="text2">
-      <div class="room-card">
-  <h3>Standard Room</h3>
-  <p>Our Standard Room provides a clean and quiet environment <br> with basic medical equipment. Ideal for short stays and general recovery.</p>
-  <ul>
-    <li>Single bed</li>
-    <li>Shared bathroom</li>
-  </ul>
-  <p class="price">Price: 500 EGP / night</p>
-</div>
-
-<div class="room-card">
-  <h3>Private Room</h3>
-  <p>Enjoy privacy and comfort in our Private Room.<br>Includes enhanced care services and a more spacious setting.</p>
-  <ul>
-    <li>Private bathroom</li>
-    <li>TV & Wi-Fi</li>
-  </ul>
-  <p class="price">Price: 900 EGP / night</p>
-</div>
-
-<div class="room-card">
-  <h3>VIP Room</h3>
-  <p>Experience premium medical care and luxury in our VIP Room,<br> designed for patients who seek top-quality service and privacy.</p>
-  <ul>
-    <li>Luxury furniture & private lounge</li>
-    <li>Meals upon request</li>
-  </ul>
-  <p class="price">Price: 1600 EGP / night</p>
-</div>
-
-<div class="room-card">
-  <h3>Intensive Care Unit (ICU)</h3>
-  <p>Advanced monitoring and intensive treatment for critical cases.<br> Equipped with the latest medical technologies.</p>
-  <ul>
-    <li>24/7 specialist care</li>
-    <li>Strict hygiene measures</li>
-  </ul>
-  <p class="price">Price: 2500 EGP / night</p>
-</div>
-    </div>
-
-<div class="slider">
-    <div class="slides">
-     <img class="slide" src="./Images/MAPhoto3.jpg" alt="room photo">   
-     <img class="slide" src="./Images/MAPhoto4.jpg"alt="room photo"> 
-     <!-- <img class="slide" src="./Images/MAPhoto5.jpg"alt="room photo">  -->
-     <img class="slide" src="./Images/MAPhoto6.jpg"alt="room photo"> 
-     <img class="slide" src="./Images/MAPhoto7.jpg"alt="room photo"> 
-     <img class="slide" src="./Images/MAPhoto8.jpg"alt="room photo"> 
-     <img class="slide" src="./Images/MAPhoto9.jpg"alt="room photo"> 
-     <img class="slide" src="./Images/MAPhoto10.jpg"alt="room photo"> 
-    </div>
-    <button class="prev" onclick="prevslide()">&#10094</button>
-    <button class="next" onclick="nextslide()">&#10095</button>
-</div> 
-  
-</div>
-
-</div>
-
-<script>
-  function showForm() 
-  {
-    const form = document.getElementById("bookingForm");
-    form.classList.toggle("hidden");
-  }
-</script>
-
-<script>
-  const slides = document.querySelectorAll(".slides img");
-  let slideIndex = 0;
-
-  document.addEventListener("DOMContentLoaded", () => {
-    if (slides.length > 0) {
-      slides[slideIndex].classList.add("displayslide");
-    }
-  });
-
-  function showslide(index) {
-    if (index >= slides.length) {
-      slideIndex = 0;
-    } else if (index < 0) {
-      slideIndex = slides.length - 1;
-    }
-
-    slides.forEach((slide) => {
-      slide.classList.remove("displayslide");
-    });
-    slides[slideIndex].classList.add("displayslide");
-  }
-
-  function prevslide() {
-    slideIndex--;
-    showslide(slideIndex);
-  }
-
-  function nextslide() {
-    slideIndex++;
-    showslide(slideIndex);
-  }
-
-</script>
+    <!-- End Sign In Section -->
 
     <!-- Footer -->
-    <footer>
+
+    <!-- <footer>
       <div class="container">
         <div class="footer">
           <div class="part">
@@ -399,10 +282,10 @@
           </div>
         </div>
       </div>
-    </footer>
-    <!-- End Footer -->
-    
-    <script src="./js/Room-Booking.js"></script>
+    </footer> -->
 
- </body>
-</html>    
+    <!-- End Footer -->
+
+    <script src="./js/Login.js"></script>
+  </body>
+</html>

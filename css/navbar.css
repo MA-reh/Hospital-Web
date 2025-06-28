@@ -6,6 +6,7 @@ div>nav {
     justify-content: space-between;
     align-items: center;
     border-bottom: #000 solid 3px;
+    box-shadow: #000 0 0 20px;
 }
 
 div>nav>div.name-hospital {
@@ -54,7 +55,7 @@ div>nav>div.nav-links>ul>li>a, div>nav>div.nav-links>ul>li>i {
     font-weight: 600;
 }
 
-div>nav>div.nav-links>ul>li>a:hover, div>nav>div.nav-links>ul>li>i:hover, div>div.drop-nav>ul>li>a:hover {
+div>nav>div.nav-links>ul>li>a:hover, div>nav>div.nav-links>ul>li>i:hover, div>div.drop-nav>ul>li a:hover {
     text-decoration: none;
     color: var(--hover-nav-buttons);
     transition: color 0.3s ease-in-out;
@@ -65,11 +66,11 @@ div>nav>div.nav-links>ul>li>i {
     font-weight: 600;
 }
 
-div>nav>div.nav-links>ul>li>a.line-page-nav, div>div.drop-nav>ul>li>a.line-page-nav {
+div>nav>div.nav-links>ul>li>a.line-page-nav, div>div.drop-nav>ul>li a.line-page-nav {
     border-bottom: #f5f3f3 solid 4px;
 }
 
-div>nav>div.nav-links>ul>li>a.line-page-nav:hover, div>div.drop-nav>ul>li>a.line-page-nav:hover {
+div>nav>div.nav-links>ul>li>a.line-page-nav:hover, div>div.drop-nav>ul>li a.line-page-nav:hover {
     transition: color 0.3s ease-in-out;
     color: #fff;
 }
@@ -80,13 +81,13 @@ div>div.drop-nav {
     position: absolute;
     background-color: var(--background-nav-drop);
     width: 275px;
-    display: none;
+    height: auto;
     border-radius: 0.5rem;
     right: 15px;
     top: 95px;
-    height: 500px;
     z-index: 1000;
     border: #000 solid 3px;
+    display: none;
 }
 
 div>div.drop-nav>ul {
@@ -98,8 +99,8 @@ div>div.drop-nav>ul {
 
 div>div.drop-nav>ul>li {
     font-size: 1.5rem;
-    cursor: pointer;
-    height: 60px;
+    /* cursor: pointer; */
+    height: 62px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,12 +114,10 @@ div>div.drop-nav>ul>li:last-child {
     gap: 7px;
 }
 
-div>div.drop-nav>ul>li>a {
-    text-decoration: none;
+div>div.drop-nav>ul>li a {
     font-size: 1.8rem;
     font-weight: 600;
     transition: color 0.3s ease-in-out;
-    color: #fff;
 }
 
 /* End Nav */

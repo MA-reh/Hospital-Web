@@ -31,6 +31,8 @@ header div.header-container div.header-content {
     box-shadow: 0 0 10px rgb(20, 20, 18);
     border-radius: 10px;
     margin-bottom: 20px;
+    animation: moveUpY 1.2s ease-in-out;
+
 }
 
 header div.header-container div.header-content h1 {
@@ -65,6 +67,24 @@ header div.header-container div.header-cards div.card {
     background-color: rgb(236, 233, 233);
     box-shadow: 0 0 10px rgb(20, 20, 18);
 }
+
+header div.header-container div.header-cards div.card:nth-child(1) {
+    animation: moveRightX 1.3s ease-in-out;
+}
+
+header div.header-container div.header-cards div.card:nth-child(2) {
+    animation: moveLeftX 1.3s ease-in-out;
+}
+
+header div.header-container div.header-cards div.card:nth-child(3) {
+    animation: moveRightX 1.3s ease-in-out;
+}
+
+header div.header-container div.header-cards div.card:nth-child(4) {
+    animation: moveLeftX 1.3s ease-in-out;
+}
+
+
 
 header>div.header-container>div.header-cards>div.card>div.card-content:first-child {
     width: 100%;
@@ -119,6 +139,7 @@ header div.header-container div.header-cards div.card div.card-content:nth-child
     border-radius: 10px;
     font-size: 1.2rem;
     background-color: var(--background-nav);
+    transition: background-color 0.3s ease-in-out;
     cursor: pointer;
 }
 

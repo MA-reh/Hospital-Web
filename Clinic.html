@@ -50,9 +50,15 @@
           <li><a href="./Awareness.html">Awareness</a></li>
           <li><a href="./F.A.Q.html">F.A.Q</a></li>
           <li><a href="./Achievements.html">Achievements</a></li>
+          <li><a href="./Donations.html">Donations</a></li>
           <li>
-            <a href="./signin.html">Login</a><span> / </span
-            ><a href="./signup.html">Sign Up</a>
+            <div id="logIn">
+              <a href="./Login.html">Login</a><span> / </span
+              ><a href="./signup.html">Sign Up</a>
+            </div>
+            <a href="" style="display: none" id="logOut" onclick="logout()"
+              >Log Out</a
+            >
           </li>
         </ul>
       </div>
@@ -66,6 +72,20 @@
             navMenu.style.display = "block";
           }
         });
+
+        if (localStorage.getItem("loggedInUser") !== null) {
+          document.getElementById("logIn").style.display = "none";
+          document.getElementById("logOut").style.display = "block";
+        }
+
+        function logout() {
+          document.getElementById("logIn").style.display = "block";
+          document.getElementById("logOut").style.display = "none";
+          localStorage.removeItem("signEmail");
+          localStorage.removeItem("signPassword");
+          localStorage.removeItem("loggedInUser");
+          window.location.href = "index.html";
+        }
       </script>
     </div>
     <!-- End Nav Bar -->

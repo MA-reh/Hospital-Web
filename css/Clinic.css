@@ -65,7 +65,7 @@ header div.container-1 div.card>div.part:nth-child(2) {
 
 header div.container-1 div.card>div.part:nth-child(2) img {
     width: 80%;
-    height: 100%;
+    height: 95%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     animation: moveDownY 1.2s ease-in-out;
@@ -77,7 +77,7 @@ header div.container-1 div.card>div.part:nth-child(1), header div.container-1 di
     border-radius: 20px;
     background-color: var(--background-body);
     border: 5px solid var(--background-nav);
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
     box-sizing: content-box;
     display: flex;
     justify-content: center;
@@ -180,8 +180,8 @@ section div.container div.part {
 section div.container div.part div.card {
     width: 95%;
     height: 100%;
-    background-color: rgb(227, 227, 223);
     display: flex;
+    backdrop-filter: blur(10px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     border-radius: 20px;
     flex-direction: column;
@@ -212,8 +212,6 @@ section div.container div.part div.card div.information-card img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
-
-
 }
 
 section div.container div.part div.card div.information-card h3 {
@@ -253,74 +251,3 @@ section div.container div.part div.card div.information-card button:hover {
 }
 
 /* End Section 1 */
-
-
-
-
-
-
-
-@keyframes moveRightX {
-    0% {
-        opacity: 0;
-        transform: translateX(-400px);
-    }
-
-    30% {
-        opacity: 0.0;
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-@keyframes moveLeftX {
-    0% {
-        opacity: 0;
-        transform: translateX(400px);
-    }
-
-    30% {
-        opacity: 0.0;
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-
-@keyframes moveUpY {
-    0% {
-        opacity: 0;
-        transform: translateY(-400px);
-    }
-
-    75% {
-        opacity: 0.0;
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-@keyframes moveDownY {
-    0% {
-        opacity: 0;
-        transform: translateY(400px);
-    }
-
-    30% {
-        opacity: 0.0;
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}

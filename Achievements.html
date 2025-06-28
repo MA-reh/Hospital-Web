@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <!-- <link rel="stylesheet" href="./css/BootStrap.css" /> -->
     <link rel="stylesheet" href="./css/Fonts.css" />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
@@ -51,9 +52,15 @@
           <li>
             <a href="./Achievements.html" class="line-page-nav">Achievements</a>
           </li>
+          <li><a href="./Donations.html">Donations</a></li>
           <li>
-            <a href="./signin.html">Login</a><span> / </span
-            ><a href="./signup.html">Sign Up</a>
+            <div id="logIn">
+              <a href="./Login.html">Login</a><span> / </span
+              ><a href="./signup.html">Sign Up</a>
+            </div>
+            <a href="" style="display: none" id="logOut" onclick="logout()"
+              >Log Out</a
+            >
           </li>
         </ul>
       </div>
@@ -67,100 +74,166 @@
             navMenu.style.display = "block";
           }
         });
+
+        if (localStorage.getItem("loggedInUser") !== null) {
+          document.getElementById("logIn").style.display = "none";
+          document.getElementById("logOut").style.display = "block";
+        }
+
+        function logout() {
+          document.getElementById("logIn").style.display = "block";
+          document.getElementById("logOut").style.display = "none";
+          localStorage.removeItem("signEmail");
+          localStorage.removeItem("signPassword");
+          localStorage.removeItem("loggedInUser");
+          window.location.href = "index.html";
+        }
       </script>
     </div>
     <!-- End Nav Bar -->
 
-    <div class="section">
-      <h2>OUR ACHIEVEMENT</h2>
-      <div class="lines">
-        <hr class="line1" />
-        <hr class="line2" />
-        <hr class="line1" />
+    <h1 class="title">Our Hospital Achievements</h1>
+    <p class="subtitle">
+      MENG Hospital has achieved numerous milestones in healthcare excellence,
+      patient care, and community service. Here are some of our key
+      accomplishments:
+    </p>
+
+    <div class="cards">
+      <div class="achievement-card">
+        <img src="./Images/Nour6.jpeg" alt="Surgeries" />
+        <div class="content">
+          <h2>Successful Surgeries</h2>
+          <div class="counter" data-target="5000">1</div>
+          <ul>
+            <li>
+              over 5,000 surgeries performed with a 98.7% success rate across
+              various specialties.
+            </li>
+            <li>
+              adoption of minimally invasive and robotic-assisted techniques for
+              faster recovery.
+            </li>
+            <li>
+              24/7 on-call surgical teams ready to handle critical cases within
+              minutes.
+            </li>
+            <li>
+              Strict sterilization protocols led to zero post-operative
+              infections in 3 consecutive years.
+            </li>
+            <li>
+              Highly specialized units including cardiothoracic, neuro, and
+              orthopedicsurgery.
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <p>
-        <strong>
-          Milestones Since 1990 Since its establishment in 1990, MENG has been
-          dedicated to providing exceptional healthcare and advancing medical
-          excellence. Over the past decades, we've achieved numerous milestones
-          that reflect our commitment to our community and our patients.</strong
-        >
-      </p>
-    </div>
+      <div class="achievement-card">
+        <img src="./Images/Nour7.jpeg" alt="Patients" />
+        <div class="content">
+          <h2>Patients Treated</h2>
+          <div class="counter" data-target="100000">1</div>
+          <ul>
+            <li>
+              Treated more than 100,000 patients with personalized care plans
+              and follow-up programs.
+            </li>
+            <li>
+              Achieved a 95% patient satisfaction score in the latest national
+              healthcare audit.
+            </li>
+            <li>
+              Reduced average waiting time to less than 10 minutes using a smart
+              queue system.
+            </li>
+            <li>
+              Launched telemedicine services serving remote villages and
+              international patients.
+            </li>
+            <li>
+              Integrated emotional support and wellness coaching into patient
+              recovery programs.
+            </li>
+          </ul>
+        </div>
+      </div>
 
-    <div class="section">
-      <div class="content">
-        <p>
-          * Pioneering Medical Procedures: We were among the first in the region
-          to introduce advanced neurosurgery techniques in 2005, significantly
-          improving patient recovery times and outcomes.
-        </p>
+      <div class="achievement-card">
+        <img src="./Images/Nour5.jpeg" alt="Surgeries" />
+        <div class="content">
+          <h2>Community Outreach</h2>
+
+          <div class="counter" data-target="25">1</div>
+          <ul>
+            <li>
+              Execution of more than 25 free medical convoys to serve remote
+              areas and villages.
+            </li>
+            <li>
+              Providing healthcare to over 10,000 beneficiaries annually outside
+              the hospital.
+            </li>
+            <li>
+              Regular awareness programs on public health and disease
+              prevention.
+            </li>
+            <li>
+              Free cancer, diabetes, and blood pressure screening initiatives
+              for citizens.
+            </li>
+            <li>
+              Partnerships with charitable organizations and schools to support
+              school health and vaccinations.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="achievement-card">
+        <img src="./Images/Nour8.jpeg" alt="Awards" />
+        <div class="content">
+          <h2>National Awards</h2>
+          <div class="counter" data-target="12">1</div>
+          <ul>
+            <li>
+              Voted “Best National Hospital” three years in a row by the
+              Ministry of Health.
+            </li>
+            <li>
+              Recognized for “Excellence in Patient-Centered Care” at the 2024
+              Health Summit.
+            </li>
+            <li>
+              Received Green Health Award for implementing sustainable hospital
+              operations.
+            </li>
+            <li>
+              Honored for innovations in AI-based diagnostics and smart medical
+              devices.
+            </li>
+            <li>
+              Partnered with top universities for medical research and training
+              programs.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <div class="section">
-      <div class="content">
-        <p>
-          * Expansion of Specialized Departments: In 2000s, we established
-          state-of-the-art departments such as our dedicated Oncology Center,
-          Women's Health Institut, offering comprehensive and specialized care
-          tailored to diverse patient needs.
-        </p>
+    <div class="image">
+      <div class="about_image">
+        <img src="./Images/Nour2.jpeg" alt="award2" />
       </div>
-    </div>
-
-    <div class="section">
-      <div class="content">
-        <p>
-          * Accreditation and Quality Recognition: We proudly achieved a
-          national quality award in 2010, consistently demonstrating our
-          adherence to the highest international standards of patient safetyand
-          quality.
-        </p>
+      <div class="about_image">
+        <img src="./Images/Nour3.jpeg" alt="award3" />
       </div>
-    </div>
-
-    <div class="section">
-      <div class="content">
-        <p>
-          * Community Health Initiatives: We launched impactful community
-          programs, including diabetes awareness campaigns since 1995, reaching
-          thousands of individuals and promoting preventive health.
-        </p>
+      <div class="about_image">
+        <img src="./Images/Nour4.jpeg" alt="award4" />
       </div>
-    </div>
-
-    <div class="section">
-      <div class="content">
-        <p>
-          * Significant Research Contributions: Our commitment to advancing
-          medicine is evident in our involvement in clinical trials for new
-          cancer therapies, contributing to global medical knowledge and better
-          treatments.
-        </p>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="content">
-        <p>
-          * Adoption of Cutting-Edge Technology: We continuously invest in the
-          latest medical technology, such as advanced MRI and CT scanning
-          equipment, ensuring our patients receive the most accurate diagnoses
-          and effective treatments.
-        </p>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="content">
-        <p>
-          * Exceptional Patient Outcomes: Our dedication to patient-centered
-          care is reflected in our consistently high patient satisfaction scores
-          and positive outcomes across various specialties, underscoring our
-          commitment to healing and well-being.
-        </p>
+      <div class="about_image">
+        <img src="./Images/Nour1.jpeg" alt="award5" />
       </div>
     </div>
 

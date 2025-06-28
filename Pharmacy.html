@@ -48,9 +48,15 @@
           <li><a href="./Awareness.html">Awareness</a></li>
           <li><a href="./F.A.Q.html">F.A.Q</a></li>
           <li><a href="./Achievements.html">Achievements</a></li>
+          <li><a href="./Donations.html">Donations</a></li>
           <li>
-            <a href="./signin.html">Login</a><span> / </span
-            ><a href="./signup.html">Sign Up</a>
+            <div id="logIn">
+              <a href="./Login.html">Login</a><span> / </span
+              ><a href="./signup.html">Sign Up</a>
+            </div>
+            <a href="" style="display: none" id="logOut" onclick="logout()"
+              >Log Out</a
+            >
           </li>
         </ul>
       </div>
@@ -64,6 +70,20 @@
             navMenu.style.display = "block";
           }
         });
+
+        if (localStorage.getItem("loggedInUser") !== null) {
+          document.getElementById("logIn").style.display = "none";
+          document.getElementById("logOut").style.display = "block";
+        }
+
+        function logout() {
+          document.getElementById("logIn").style.display = "block";
+          document.getElementById("logOut").style.display = "none";
+          localStorage.removeItem("signEmail");
+          localStorage.removeItem("signPassword");
+          localStorage.removeItem("loggedInUser");
+          window.location.href = "index.html";
+        }
       </script>
     </div>
     <!-- End Nav Bar -->
@@ -172,14 +192,14 @@
               have been discharged from the hospital. <br />
               * Our team ensures that your medications are delivered safely and
               promptly to your doorstep. <br />
-              * Delivery is available within [Specify Area/City] and may be
-              subject to a nominal delivery fee. <br />
-              * Please allow [Specify Time Frame] for delivery after your
-              prescription is verified. <br />
+              * Delivery is available within Cairo & Giza and may be subject to
+              a nominal delivery fee. <br />
+              * Please allow 2 Hours for delivery after your prescription is
+              verified. <br />
               * How to Order Your Medications Online : <br />
               * Request Your Delivery : <br />
-              * Online: Fill out our simple online delivery request form [Link
-              to Form]. <br />
+              * Online: Fill out our simple online delivery request form ######.
+              <br />
               * By Phone: Call our pharmacy at (+20) 1040424647 during business
               hours. <br />
               * In-person: Inform the pharmacy staff at the hospital counter

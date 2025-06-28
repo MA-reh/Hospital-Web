@@ -1,50 +1,120 @@
-.section {
-    margin: 40px auto;
-    background-color: rgba(238, 230, 230, 0.728);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 1000px;
+.title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    color: var(--background-nav);
 }
 
-h2 {
+.subtitle {
+    width: 65%;
     text-align: center;
-    color: var(--background-nav);
+    font-size: 1.7rem;
+    margin-left: 19rem;
     margin-bottom: 20px;
+    color: #000;
 }
 
 .lines .line1 {
     width: 10%;
     margin: 4px auto;
-    border-color: var(--background-nav);
+    border-color: #07165e;
 }
 
 .line2 {
     width: 20%;
     margin: 4px auto;
-    border-color: var(--background-nav);
+    border-color: #07165e;
 }
 
 .line-page {
-    border-bottom: 4px solid var(--background-nav);
+    border-bottom: 4px solid #f5f3f3;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.cards .achievement-card .content ul li {
+    color: #4b4b4b;
+}
+
+.achievement-card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.achievement-card img {
+    width: 250px;
+    object-fit: cover;
 }
 
 .content {
-    display: flex;
-    align-items: flex-start;
-    border: 2px solid #e0e0e0;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #fcfcfc;
+    padding: 20px;
+    flex: 1;
 }
 
-.section .content p {
+.content h2 {
+    font-size: 2.4rem;
+    color: var(--background-nav);
+
     margin-bottom: 10px;
-    line-height: 2;
-    color: #000;
 }
 
-strong {
-    color: #000;
+.counter {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--hover-nav-buttons);
+
+    margin-bottom: 15px;
+}
+
+.content ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+.image {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about_image {
+    border: 3px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    width: 200px;
+    height: 200px;
+}
+
+.about_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.about_image:hover {
+    transform: rotate(10deg) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    border-color: #010a14;
 }

@@ -1,3 +1,4 @@
+// Sign Up Form
 let signUpForm = document.getElementById("registerForm");
 
 signUpForm.addEventListener("submit", function (e) {
@@ -5,18 +6,18 @@ signUpForm.addEventListener("submit", function (e) {
   let signEmail = document.getElementById("SignUpEmail").value;
   let signPassword = document.getElementById("SignUpPassword").value;
   e.preventDefault();
-
   if (localStorage.getItem(signEmail)) {
     alert("User already exists. Please log in.");
   } else {
-    localStorage.setItem(signEmail, signPassword, signName);
+    localStorage.setItem("signEmail", signEmail);
+    localStorage.setItem("signPassword", signPassword);
     alert("User registered successfully. Please log in.");
     signUpForm.reset();
-    window.location.href = "signin.html";
+    window.location.href = "Login.html";
   }
 });
-
-function logout() {
-  localStorage.removeItem("signEmail");
-  window.location.href = "signin.html";
+// Check if user is logged in
+if (localStorage.getItem("loggedInUser") !== null) {
+  document.getElementById("logIn").style.display = "none";
+  document.getElementById("logOut").style.display = "block";
 }

@@ -24,7 +24,7 @@
     box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     max-width: 1100px;
-    margin: 40px auto;
+    margin: 30px auto;
 }
 
 .form-wrapper,
@@ -40,32 +40,6 @@
     opacity: 0;
     padding-bottom: 50px;
     border-radius: 10px;
-}
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-    }
-
-    100% {
-        transform: scale(1);
-    }
 }
 
 .image-wrapper img {
@@ -135,9 +109,12 @@
     flex: 1;
 }
 
-.submit {
-    background-color: var(--background-nav);
+.booking-form input[type="submit"] {
     color: whitesmoke;
+    background-color: var(--background-nav);
+}
+
+.submit {
     padding: 12px 25px;
     border: none;
     border-radius: 15px;
@@ -149,8 +126,8 @@
 
 .submit:hover {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    color: rgb(0, 0, 0);
-    background-color: var(--hover-nav-buttons);
+    color: rgb(0, 0, 0) !important;
+    background-color: var(--hover-nav-buttons) !important;
 }
 
 @media (max-width: 800px) {

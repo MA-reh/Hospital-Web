@@ -16,6 +16,8 @@ header>div.header-content {
     justify-content: center;
     align-items: center;
     margin-left: 3rem;
+    margin-top: 30px;
+    animation: moveRightX 1.1s ease-in-out;
 }
 
 header div.header-content div.part {
@@ -67,6 +69,8 @@ header div.header-image {
     width: 70%;
     height: 80%;
     /* margin-right: 6rem; */
+    animation: moveLeftX 1.2s ease-in-out;
+
 }
 
 header div.header-image img {
@@ -89,6 +93,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 section div.container {
@@ -171,6 +176,7 @@ section div.container div.part div.card div.information-card i {
 section div.container div.part div.card div.information-card h3 {
     color: var(--background-nav) !important;
     text-align: center;
+    /* -webkit-text-stroke: 1px #000000; */
 }
 
 section div.container div.part div.card div.information-card p {

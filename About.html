@@ -48,9 +48,15 @@
           <li><a href="./Awareness.html">Awareness</a></li>
           <li><a href="./F.A.Q.html">F.A.Q</a></li>
           <li><a href="./Achievements.html">Achievements</a></li>
+          <li><a href="./Donations.html">Donations</a></li>
           <li>
-            <a href="./signin.html">Login</a><span> / </span
-            ><a href="./signup.html">Sign Up</a>
+            <div id="logIn">
+              <a href="./Login.html">Login</a><span> / </span
+              ><a href="./signup.html">Sign Up</a>
+            </div>
+            <a href="" style="display: none" id="logOut" onclick="logout()"
+              >Log Out</a
+            >
           </li>
         </ul>
       </div>
@@ -64,31 +70,50 @@
             navMenu.style.display = "block";
           }
         });
+
+        if (localStorage.getItem("loggedInUser") !== null) {
+          document.getElementById("logIn").style.display = "none";
+          document.getElementById("logOut").style.display = "block";
+        }
+
+        function logout() {
+          document.getElementById("logIn").style.display = "block";
+          document.getElementById("logOut").style.display = "none";
+          localStorage.removeItem("signEmail");
+          localStorage.removeItem("signPassword");
+          localStorage.removeItem("loggedInUser");
+          window.location.href = "index.html";
+        }
       </script>
     </div>
     <!-- End Nav Bar -->
 
     <div class="page1">
-      <div class="walls">
-        <img src="./Images/photo8.jpg" alt="wallpaper" />
-        <img src="./Images/photo7.jpg" alt="wallpaper" />
-        <img src="./Images/photo6.jpg" alt="wallpaper" />
-        <img src="./Images/photo5.jpg" alt="wallpaper" />
-      </div>
-      <div class="box">
-        <div class="text typewriter">
-          <h1>Who we are ?</h1>
-          <h2>Welcome to MENG Hospital – Where Compassion Meets Excellence.</h2>
-          <p>
-            At MENG Hospital, we are dedicated to delivering high-quality
-            medical care with empathy,<br />
-            innovation, and a deep commitment to patient well-being.<br />
-            Our mission is to treat every individual with respect<br />
-            and ensure a healing experience from the moment they walk in.
-          </p>
-          <a href="#page2" class="know-more-btn" onclick="goToSection()"
-            >Know More</a
-          >
+      <div class="header-container">
+        <div class="walls">
+          <img src="./Images/photo4.jpeg" alt="wallpaper" />
+          <img src="./Images/photo5.jpeg" alt="wallpaper" />
+          <img src="./Images/photo2.jpeg" alt="wallpaper" />
+          <img src="./Images/photo3.jpeg" alt="wallpaper" />
+          <img src="./Images/photo6.jpeg" alt="wallpaper" />
+          <img src="./Images/Photo7.jpeg" alt="wallpaper" />
+        </div>
+        <div class="box">
+          <div class="text typewriter">
+            <h1>Who we are ?</h1>
+            <h2>Welcome to MENG Hospital</h2>
+            <p>
+              MENG Hospital is a state-of-the-art healthcare facility located in
+              <br />
+              Cairo, Egypt. Our mission is to provide exceptional medical care
+              and <br />support to our patients through a team of highly skilled
+              <br />
+              professionals and advanced technology.
+            </p>
+            <a href="#page2" class="know-more-btn" onclick="goToSection()"
+              >Know More</a
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -311,15 +336,5 @@
       </div>
     </footer>
     <!-- End Footer -->
-
-    <!-- Js Teleport To section -->
-    <script>
-      function goToSection() {
-        window.location.href = "#page2";
-        setTimeout(() => {
-          location.reload();
-        }, 100);
-      }
-    </script>
   </body>
 </html>

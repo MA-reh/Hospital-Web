@@ -1,5 +1,5 @@
 div.back {
-   background-color: rgba(168, 168, 168, 0.728);
+   /* background-color: rgba(168, 168, 168, 0.728); */
    width: 100%;
    display: flex;
    justify-content: center;
@@ -32,25 +32,6 @@ div.part-1 p {
    font-size: 1.2rem;
 }
 
-
-@keyframes down {
-   0% {
-      opacity: 0;
-      transform: translateY(-70px);
-   }
-
-   50% {
-      opacity: 0.0;
-      transform: translateY(20px);
-   }
-
-   100% {
-      opacity: 1;
-      transform: translateY(0);
-   }
-
-}
-
 .card {
    width: 70%;
    height: 7.5rem;
@@ -59,7 +40,7 @@ div.part-1 p {
    box-shadow: 4px 4px 4px 4px rgba(85, 85, 85, 0.7);
    text-align: center;
    margin-top: 20px;
-   background-color: rgb(218, 218, 218);
+   background-color: rgb(221, 227, 239);
 }
 
 .card1 {
@@ -67,137 +48,40 @@ div.part-1 p {
    animation: card1 1.2s ease-in-out;
 }
 
-@keyframes card1 {
-   0% {
-      opacity: 0;
-      transform: translateX(-300px);
-   }
-
-   100% {
-      opacity: 1;
-      transform: translateX(0);
-   }
-}
-
 .card2 {
    display: flex;
    animation: card2 1.4s ease-in-out;
 }
 
-@keyframes card2 {
-   0% {
-      opacity: 0;
-      transform: translateX(300px);
-   }
-
-   100% {
-      opacity: 1;
-      transform: translateX(0);
-   }
-}
-
 .card3 {
    display: flex;
-   animation: card3 1.6s ease-in-out;
-}
-
-@keyframes card3 {
-   0% {
-      opacity: 0;
-      transform: translateX(-300px);
-   }
-
-   100% {
-      opacity: 1;
-      transform: translateX(0);
-   }
+   animation: card1 1.6s ease-in-out;
 }
 
 .card4 {
    display: flex;
-   animation: card4 1.8s ease-in-out;
-}
-
-@keyframes card4 {
-   0% {
-      opacity: 0;
-      transform: translateX(300px);
-   }
-
-   100% {
-      opacity: 1;
-      transform: translateX(0);
-   }
+   animation: card2 1.8s ease-in-out;
 }
 
 .card5 {
    display: flex;
-   animation: card5 2s ease-in-out;
-}
-
-@keyframes card5 {
-   0% {
-      opacity: 0;
-      transform: translateX(-300px);
-   }
-
-   100% {
-      opacity: 1;
-      transform: translateX(0);
-   }
+   animation: card1 2s ease-in-out;
 }
 
 .card6 {
    display: flex;
-   animation: card6 2.2s ease-in-out;
-}
-
-@keyframes card6 {
-   0% {
-      opacity: 0;
-      transform: translateX(300px);
-   }
-
-   100% {
-      opacity: 1;
-      transform: translateX(0);
-   }
+   animation: card2 2.2s ease-in-out;
 }
 
 .card7 {
    display: flex;
-   animation: card7 2.4s ease-in-out;
-}
-
-@keyframes card7 {
-   0% {
-      opacity: 0;
-      transform: translateX(-300px);
-   }
-
-   100% {
-      opacity: 1;
-      transform: translateX(0);
-   }
+   animation: card1 2.4s ease-in-out;
 }
 
 .card8 {
    display: flex;
-   animation: card8 2.6s ease-in-out;
+   animation: card2 2.6s ease-in-out;
 }
-
-@keyframes card8 {
-   0% {
-      opacity: 0;
-      transform: translateX(300px);
-   }
-
-   100% {
-      opacity: 1;
-      transform: translateX(0);
-   }
-}
-
 
 .card h4 {
    margin-top: 12px;

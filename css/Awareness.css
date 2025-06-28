@@ -1,3 +1,38 @@
+header {
+    margin: 1rem;
+    width: 100%;
+    /* background-color: #000; */
+    height: 10vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div.header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    animation: moveUpY 1.2s ease-in-out;
+}
+
+header div.header h1 {
+    color: var(--background-nav);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+header div.header p {
+    color: #000;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+
 .section {
     margin: 40px auto;
     background-color: rgba(238, 230, 230, 0.728);
@@ -7,6 +42,7 @@
     width: 90%;
     max-width: 1000px;
     color: #000;
+    animation: moveRightX 1.2s ease-in-out;
 }
 
 div.section h2 {
@@ -58,4 +94,20 @@ div.section div.content img {
     font-size: 4.2rem;
     margin-right: 15px;
     font-weight: 600px;
+}
+
+.section:nth-child(1) {
+    animation: moveRightX 1.2s ease-in-out;
+}
+
+.section:nth-child(2) {
+    animation: moveLeftX 1.2s ease-in-out;
+}
+
+.section:nth-child(3) {
+    animation: moveRightX 1.4s ease-in-out;
+}
+
+.section:nth-child(4) {
+    animation: moveLeftX 1.4s ease-in-out;
 }

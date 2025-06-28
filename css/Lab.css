@@ -4,35 +4,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: moveX 1.2s ease-in-out;
-}
-
-@keyframes moveX {
-    0% {
-        opacity: 0;
-        transform: translateX(-400px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-@keyframes moveY {
-    0% {
-        opacity: 0;
-        transform: translateY(-400px);
-    }
-
-    75% {
-        opacity: 0.0;
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+    animation: moveRightX 1.2s ease-in-out;
 }
 
 header div.container-1 {
@@ -112,7 +84,7 @@ section div.section-text h2 {
     text-align: center;
     font-weight: 600;
     margin-top: 20px;
-    animation: moveY 1.2s ease-in-out;
+    animation: moveUpY 1.2s ease-in-out;
 
 }
 
@@ -127,7 +99,7 @@ section>div.container-2 {
     border-radius: 10px;
     border: 2px solid var(--background-nav);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    animation: moveX 1.2s ease-in-out;
+    animation: moveUpX 1.2s ease-in-out;
 
 }
 

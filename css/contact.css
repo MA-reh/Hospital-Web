@@ -18,19 +18,8 @@ body {
   position: relative;
   box-shadow: 0 0 10px var(--background-footer);
   overflow: hidden;
-  background-color: var(--background-body);
   z-index: 1;
   border: var(--background-footer) 5px solid;
-}
-
-@keyframes border-move {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  100% {
-    background-position: 100% 50%;
-  }
 }
 
 .section-title {
@@ -81,7 +70,7 @@ body {
 
 .submit {
   background-color: var(--background-nav);
-  color: whitesmoke;
+  color: #fff;
   padding: 12px 25px;
   border: none;
   border-radius: 15px;
@@ -96,12 +85,6 @@ body {
   color: rgb(0, 0, 0);
   border: #000000 2px solid;
   background-color: var(--hover-nav-buttons);
-}
-
-@media (max-width: 768px) {
-  .row {
-    flex-direction: column;
-  }
 }
 
 .map-container {
@@ -144,26 +127,6 @@ body {
   border-right: 2px solid var(--background-nav);
   animation: typing 4s steps(40, end) forwards, blink 0.8s infinite;
   margin-top: 15px;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink {
-  0%, 100% {
-    border-color: transparent;
-  }
-
-  50% {
-    border-color: var(--background-nav);
-  }
 }
 
 .contact-image {
